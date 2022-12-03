@@ -222,3 +222,33 @@ pre tt:before,
 pre tt:after {
   content: none;
 }
+
+/* Dark mode styles */
+.dark-switcher {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .dark-switcher {
+
+  }
+}
+
+.dark {
+  background-color: #2a2b2d;
+  color: #fff;
+  transition: all 0.6s ease;
+}
+
+.light {
+  transition: all 0.6s ease;
+  background-color: #fefefe;
+}
+
+.dark a,
+.dark a:visited {
+  color: #fff;
+}
+/* End Dark mode styles */
