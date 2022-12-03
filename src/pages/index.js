@@ -105,7 +105,7 @@ const IndexPage = () => (
           >
             {link.text} ↗
           </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
+          <p>{link.description}</p>
         </li>
       ))}
     </ul>

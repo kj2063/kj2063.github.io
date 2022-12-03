@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
                     textDecoration: `none`,
                   }}
                 >
-                  {siteTitle}
+                    <b>{siteTitle}</b>
                 </Link>
                 {/*<img*/}
                 {/*  alt="Gatsby logo"*/}
@@ -52,7 +52,7 @@ const Header = ({ siteTitle }) => (
                       </Link>
                       &nbsp;&nbsp;
                       <button className="dark-switcher" onClick={theme.toggleDark}>
-                          {theme.dark ? <b>☀</b> : <b>&nbsp;☾</b>}
+                          {theme.dark ? <b>☀</b> : <b>☾</b>}
                       </button>
                   </div>
               </header>
