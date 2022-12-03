@@ -72,17 +72,17 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
+      {/*<StaticImage*/}
+      {/*  src="../images/example.png"*/}
+      {/*  loading="eager"*/}
+      {/*  width={64}*/}
+      {/*  quality={95}*/}
+      {/*  formats={["auto", "webp", "avif"]}*/}
+      {/*  alt=""*/}
+      {/*  style={{ marginBottom: `var(--space-3)` }}*/}
+      {/*/>*/}
       <h1>
-        Welcome to <b>Gatsby!</b>
+        Welcome to <b>My Blog!</b>
       </h1>
       <p className={styles.intro}>
         <b>Example pages:</b>{" "}
