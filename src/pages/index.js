@@ -3,9 +3,8 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import "../styles/index.css"
-import {graphql} from "gatsby";
+import {graphql, Link} from "gatsby";
 import moment from "moment";
-import {LineOutlined} from "@ant-design/icons";
 
 const IndexPage = (graphql) => {
 
@@ -17,7 +16,7 @@ const IndexPage = (graphql) => {
         const postData = obj.node.frontmatter;
         postArrRender.push(
             <div className={"postDiv"}>
-                <a className={"titleStyle"} href={postData.slug}>{postData.title}</a>
+                <Link className={"titleStyle"} to={postData.slug}>{postData.title}</Link>
                 <span className={"dateStyle"}> - {moment(postData.date).format("YYYY.MM.DD")}</span>
             </div>
         )

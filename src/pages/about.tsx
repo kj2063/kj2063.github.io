@@ -14,7 +14,7 @@ const about : React.FC = () => {
                   src="../images/jun_circle_img.png"
                   loading="eager"
                   width={200}
-                  quality={100}
+                  quality={60}
                   formats={["auto", "webp", "avif"]}
                 />
                 <div className={"introductionText"}>
