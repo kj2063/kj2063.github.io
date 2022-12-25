@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
     <ThemeContext.Consumer>
         {theme => (
           <div className={theme.dark ? 'dark' : 'light'}>
-              <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+              <Header siteTitle={data.site.siteMetadata?.title} />
               <div
                 style={{
                   margin: `0 auto`,
@@ -38,13 +38,12 @@ const Layout = ({ children }) => {
                 <main>{children}</main>
                 <footer
                   style={{
-                    marginTop: `var(--space-5)`,
+                    marginTop: "100px",
                     fontSize: `var(--font-sm)`,
+                    color:"darkgray"
                   }}
                 >
-                  © 2022 &middot; Built by
-                  {` `}
-                  <a href="https://www.gatsbyjs.com">Gatsby</a>
+                  © 2022 by {data.site.siteMetadata?.title}
                 </footer>
               </div>
           </div>
