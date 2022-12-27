@@ -1,6 +1,6 @@
 ---
 title: "테스트2"
-slug: "/blog/test2/"
+slug: "/blog/test2"
 date: "2020-11-10"
 ---
 

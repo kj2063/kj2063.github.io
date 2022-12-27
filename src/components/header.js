@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => (
                 {/*/>*/}
                   <div>
                       <Link
-                          to="/"
+                          to="/blog"
                           style={{
                               fontSize: `var(--font-sm)`,
                               textDecoration: `none`,
