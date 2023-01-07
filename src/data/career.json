@@ -1,0 +1,24 @@
+[
+  {
+    "title": "세종대학교 중력렌즈 및 우주론 연구실 데이터 분석",
+    "detail" : [
+      "python 의 numpy, scipy, sympy, astropy, matplotlib 등을 이용한 데이터 분석"
+    ],
+    "period" : "2020.11.30 ~ 2021.10.29"
+  },
+  {
+    "title": "중앙정보처리학원 교육 수료",
+    "detail" : [
+      "JAVA 응용 소프트웨어 개발자 과정 수료"
+    ],
+    "period" : "2021.11.16 ~ 2022.4.28"
+  },
+  {
+    "title": "카카오 구매 시스템(ERP) 구축",
+    "detail" : [
+      "입고,납품 모듈 Backend & Frontend 전면 개발",
+      "그 외 모듈 부가기능 Backend & Frontend 개발"
+    ],
+    "period" : "2022.5.2 ~ "
+  }
+]

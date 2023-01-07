@@ -9,12 +9,10 @@ const blog = (graphql) => {
 
     const blogPostNodeArr = graphql.data.allMarkdownRemark.edges;
 
-    const postArrRender = [];
-
-    blogPostNodeArr.forEach((obj)=> {
+    const postArrRender = blogPostNodeArr.map((obj) => {
         const postData = obj.node.frontmatter;
-        postArrRender.push(
-            <div className={"postDiv"}>
+        return (
+            <div className={"postDiv"} key={postData.slug}>
                 <Link className={"titleStyle"} to={postData.slug}>{postData.title}</Link>
                 <span className={"dateStyle"}> - {moment(postData.date).format("YYYY.MM.DD")}</span>
             </div>

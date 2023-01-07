@@ -71,15 +71,6 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 const GatsbyGuide = () => (
     <Layout>
         <div className={"textCenter"}>
-            {/*<StaticImage*/}
-            {/*  src="../images/example.png"*/}
-            {/*  loading="eager"*/}
-            {/*  width={64}*/}
-            {/*  quality={95}*/}
-            {/*  formats={["auto", "webp", "avif"]}*/}
-            {/*  alt=""*/}
-            {/*  style={{ marginBottom: `var(--space-3)` }}*/}
-            {/*/>*/}
             <p className={"intro"}>
                 <b>Example pages:</b>{" "}
                 {samplePageLinks.map((link, i) => (
