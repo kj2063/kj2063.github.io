@@ -1,6 +1,6 @@
 [
   {
-    "title": "세종대학교 중력렌즈 및 우주론 연구실 데이터 분석",
+    "title": "세종대학교 대학원 중력렌즈 및 은하역학 연구실 연구",
     "detail" : [
       "python 의 numpy, scipy, sympy, astropy, matplotlib 등을 이용한 데이터 분석"
     ],
@@ -19,6 +19,6 @@
       "입고,납품 모듈 Backend & Frontend 전면 개발",
       "그 외 모듈 부가기능 Backend & Frontend 개발"
     ],
-    "period" : "2022.5.2 ~ "
+    "period" : "2022.5.2 ~ 현재"
   }
 ]

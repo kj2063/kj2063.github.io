@@ -41,7 +41,7 @@ const about : React.FC = () => {
                             <div className={"careerPeriodDiv flexItem"}>
                                 {data.period}
                             </div>
-                            <div>
+                            <div className={'careerDetailDiv'}>
                                 <p>
                                     {data.title}
                                 </p>

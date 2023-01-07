@@ -32,6 +32,11 @@
     margin-bottom: 10px;
 }
 
+.careerDetailDiv{
+    flex-basis: 580px;
+    margin-left: 20px;
+}
+
 .flexBox {
     display: flex;
     flex-wrap: wrap;
