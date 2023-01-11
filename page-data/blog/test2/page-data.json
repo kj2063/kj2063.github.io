@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-templates-blog-js","path":"/blog/test2/","result":{"data":{"markdownRemark":{"html":"<h1>제목2</h1>\n<p>내용2</p>","frontmatter":{"title":"테스트2"}}},"pageContext":{"slug":"/blog/test2/"}},"staticQueryHashes":["3649515864","63159454"],"slicesMap":{}}
+{"componentChunkName":"component---src-templates-post-template-tsx","path":"/blog/test2/","result":{"data":{"markdownRemark":{"html":"<h1>제목2</h1>\n<p>내용2</p>","frontmatter":{"title":"테스트2"}}},"pageContext":{"slug":"/blog/test2/"}},"staticQueryHashes":["3649515864","63159454"],"slicesMap":{}}
