@@ -30,7 +30,7 @@ const about : React.FC = () => {
                 </div>
             </div>
             <div className={"careerDiv"}>
-                <h2>Career</h2>
+                <h2>Experience</h2>
                 <div >
                     {careerData.map((data) => {
                         const detailRender = data.detail.map((detailData) => {
