@@ -2,6 +2,7 @@
   --border-radius: 4px;
   --color-text: #333;
   --color-primary: #149494;
+  --color-secondary: #969696;
   --color-code-bg: #fff4db;
   --color-code: #8a6534;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
@@ -24,6 +25,14 @@
   --size-content: 54rem;
   --size-gutter: var(--space-5);
   --size-gap: var(--space-6);
+}
+blockquote{
+  border: 1px solid var(--color-secondary);
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-left: 10px solid var(--color-secondary);
 }
 html {
   -webkit-text-size-adjust: 100%;
