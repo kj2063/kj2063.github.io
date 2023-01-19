@@ -8,11 +8,11 @@ const postTemplate = ({ path, data }) => {
     return (
         <Layout>
         <div>
-            <h1>
-                <b>Blog</b>
-            </h1>
+            <h2 className={"mainColor"}>
+                Blog
+            </h2>
             <div>
-                <h1>{blog.frontmatter.title}</h1>
+                <h1 className={"mgl30"} style={{fontWeight:'lighter',marginTop:'30px'}}>{blog.frontmatter.title}</h1>
                 <div dangerouslySetInnerHTML={{ __html: blog.html }} />
             </div>
         </div>

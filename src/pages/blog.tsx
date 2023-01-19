@@ -13,7 +13,7 @@ const blog = (graphql) => {
         const postData = obj.node.frontmatter;
         return (
             <div className={"postDiv"} key={postData.slug}>
-                <span className={"dateStyle"}>{moment(postData.date).format("YYYY.MM.DD")}&nbsp;-&nbsp;</span>
+                <span className={"dateStyle mgl30"}>{moment(postData.date).format("YYYY.MM.DD")}&nbsp;-&nbsp;</span>
                 <Link className={"titleStyle"} to={postData.slug}>{postData.title}</Link>
             </div>
         )
