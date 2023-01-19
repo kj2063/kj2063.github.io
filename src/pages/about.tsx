@@ -12,9 +12,9 @@ const about : React.FC = () => {
 
     return (
         <Layout>
-            <h1>
-                <b>About</b>
-            </h1>
+            <h2 className={"mainColor"}>
+                About
+            </h2>
             <div className={"textCenter"}>
                 <StaticImage
                   src="../images/jun_circle_img.png"

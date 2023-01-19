@@ -17,9 +17,12 @@ const Header = ({ siteTitle }) => (
               >
                 <Link
                   to="/"
+                  className={"main_a mainColor"}
                   style={{
-                    fontSize: `var(--font-sm)`,
+                    fontSize: `var(--font-md)`,
                     textDecoration: `none`,
+                      fontWeight:'lighter',
+                      textDecorationLine:"underline"
                   }}
                 >
                     <b>{siteTitle}</b>
@@ -33,6 +36,7 @@ const Header = ({ siteTitle }) => (
                   <div>
                       <Link
                           to="/blog"
+                          className={"main_a mainColor"}
                           style={{
                               fontSize: `var(--font-sm)`,
                               textDecoration: `none`,
@@ -43,6 +47,7 @@ const Header = ({ siteTitle }) => (
                       &nbsp;&nbsp;
                       <Link
                           to="/about"
+                          className={"main_a mainColor"}
                           style={{
                               fontSize: `var(--font-sm)`,
                               textDecoration: `none`,

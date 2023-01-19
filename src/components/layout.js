@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
                   style={{
                     marginTop: "100px",
                     fontSize: `var(--font-sm)`,
-                    color:"darkgray"
+                    color:"var(--color-secondary)"
                   }}
                 >
                   © 2022 by {data.site.siteMetadata?.title}

@@ -13,8 +13,8 @@ const blog = (graphql) => {
         const postData = obj.node.frontmatter;
         return (
             <div className={"postDiv"} key={postData.slug}>
+                <span className={"dateStyle"}>{moment(postData.date).format("YYYY.MM.DD")}&nbsp;-&nbsp;</span>
                 <Link className={"titleStyle"} to={postData.slug}>{postData.title}</Link>
-                <span className={"dateStyle"}> - {moment(postData.date).format("YYYY.MM.DD")}</span>
             </div>
         )
     })
@@ -22,9 +22,9 @@ const blog = (graphql) => {
     return(
         <Layout>
             <div>
-                <h1>
-                    <b>Blog</b>
-                </h1>
+                <h2 className={"mainColor"}>
+                    Blog
+                </h2>
                 {postArrRender}
             </div>
         </Layout>

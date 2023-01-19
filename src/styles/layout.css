@@ -52,9 +52,7 @@ body {
   margin: 0;
   word-wrap: break-word;
 }
-a {
-  background-color: transparent;
-  color: var(--color-primary);
+.main_a {
   text-decoration: none;
   font-weight: 500;
   text-decoration-thickness: 1.5px;
@@ -85,7 +83,7 @@ h1 {
   line-height: var(--line-height-dense);
   letter-spacing: -0.01em;
 }
-h1 > b {
+.mainColor {
   color: var(--color-primary);
 }
 img {
@@ -255,8 +253,5 @@ pre tt:after {
   background-color: #fefefe;
 }
 
-.dark a,
-.dark a:visited {
-  color: var(--color-primary);
-}
+
 /* End Dark mode styles */

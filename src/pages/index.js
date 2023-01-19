@@ -10,11 +10,13 @@ const IndexPage = () => {
     return(
       <Layout>
         <div>
-          <h1>
-           <b>Home</b>
-          </h1>
+          <h2 className={"mainColor"}>
+           Home
+          </h2>
             <div className={"textCenter"}>
-            home_page
+                <br/><br/>
+                홈 화면 구상중...
+                <br/><br/>
             </div>
         </div>
       </Layout>

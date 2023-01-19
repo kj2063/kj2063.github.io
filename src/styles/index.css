@@ -54,17 +54,33 @@
 /*}*/
 
 .titleStyle{
-  font-size: large;
-  font-weight: bold;
+  font-size: x-large;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.titleStyle:hover{
+  text-decoration: none;
+}
+
+
+.light .titleStyle,
+.light .titleStyle:visited{
+  color: black;
+}
+
+.dark .titleStyle,
+.dark .titleStyle:visited {
+  color: #fff;
 }
 
 .dateStyle{
   font-size: large;
-  font-weight: bold;
-  color: darkgray;
+  font-weight: lighter;
+  color: var(--color-secondary);
 }
 
 .postDiv{
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   margin-left: 30px;
 }
