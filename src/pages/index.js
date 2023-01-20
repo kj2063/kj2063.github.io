@@ -15,7 +15,7 @@ const IndexPage = () => {
           </h2>
             <div className={"textCenter"}>
                 <br/><br/>
-                홈 화면 구상중...
+                <b>홈 화면 구상중...</b>
                 <br/><br/>
             </div>
         </div>

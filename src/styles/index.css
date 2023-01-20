@@ -66,12 +66,12 @@
 
 .light .titleStyle,
 .light .titleStyle:visited{
-  color: black;
+  color: var(--color-text);
 }
 
 .dark .titleStyle,
 .dark .titleStyle:visited {
-  color: #fff;
+  color: var(--color-dark-text);
 }
 
 .dateStyle{

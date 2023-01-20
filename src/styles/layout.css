@@ -1,6 +1,7 @@
 :root {
   --border-radius: 4px;
-  --color-text: #333;
+  --color-text: #111;
+  --color-dark-text : #FFF;
   --color-primary: #149494;
   --color-secondary: #969696;
   --color-code-bg: #fff4db;
@@ -244,7 +245,7 @@ pre tt:after {
 
 .dark {
   background-color: #2a2b2d;
-  color: #fff;
+  color: var(--color-dark-text);
   transition: all 0.6s ease;
 }
 
