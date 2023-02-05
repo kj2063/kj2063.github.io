@@ -15,8 +15,7 @@ FIFO 구조. 작업을 처리하는 요소에 많은 데이터가 한번에 몰�
 ## Tree (트리)
 - ### Binary Tree (이진 트리)
     하나의 노드가 자식노드를 2개까지만 가질 수 있는 트리.<br> 수식을 트리처럼 표현하여 계산하게 하는 `Expression Binary Tree(수식 이진 트리)` 와 
-빠른 데이터 검색을 가능하게 하는 `Binary Search Tree(이진 탐색 트리)` ,`Red Black Tree(레드 블랙 트리)` 등의 토대가 된 자료구조.<br>
-<br>
+    빠른 데이터 검색을 가능하게 하는 `Binary Search Tree(이진 탐색 트리)` ,`Red Black Tree(레드 블랙 트리)` 등의 토대가 된 자료구조.<br><br><br>
 # 알고리즘
 ## 정렬
 - ### 버블정렬
