@@ -19,6 +19,13 @@
       "입고,납품 모듈 Backend & Frontend 전면 개발",
       "그 외 모듈 부가기능 Backend & Frontend 개발"
     ],
-    "period" : "2022.5.2 ~ 현재"
+    "period" : "2022.5.2 ~ 2023.4.7"
+  },
+  {
+    "title": "KB증권 경영관리 인프라(ERP) 구축",
+    "detail" : [
+      "예산 편성 모듈 Backend & Frontend 개발"
+    ],
+    "period" : "2022.4.17 ~ 현재"
   }
 ]
