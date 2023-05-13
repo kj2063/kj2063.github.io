@@ -29,12 +29,12 @@ date: "2024-05-02"
   &nbsp;논문에서 object localization을 위해 3가지 방법을 제시한다.<br><br>
   1. <b>Regression</b> <br>
     &nbsp;Szegedy 의 연구의 결과로 좋지 못함을 알고 채택하지 않음.<br>
-  > C.Szegedy, A.Toshev, and D.Erhan. Deep neural networks for object detection. In NIPS, 2013.<br>
+  > C.Szegedy, A.Toshev, and D.Erhan. Deep neural networks for object detection. In NIPS, 2013.
   2. <b>Sliding Window</b><br>
     &nbsp;R-CNN은 합성곱 층이 5개인 구조여서, 매우 큰 윈도우 (195\*195 pixels)와 Strides (32\*32 pixels)로는 정확한 localization 이 힘들기 때문에 채택하지 않음.<br><br>
   3. <b>Region Proposals</b><br>
      &nbsp;`Selective Search` 를 채택 함.<br>
-  > C. Gu, J. J. Lim, P. Arbelaez, and J. Malik. Recognition using regions. In CVPR, 2009.<br><br>
+  > C. Gu, J. J. Lim, P. Arbelaez, and J. Malik. Recognition using regions. In CVPR, 2009.
 
 - ### Feature Extraction
   &nbsp;CNN(AlexNet) 을 활용하여 각 region proposal에서 4096 차원의 feature vector을 추출한다.<br><br>
@@ -50,8 +50,9 @@ date: "2024-05-02"
   > <div style="text-align: center;">
   >  <img src="../images/posts/NMS_img.png">
   >  </div>
-  > object detector가 예측한 bounding box 중에서 정확한 bounding box를 선택하도록 하는 기법
-  
+  > <br>
+  > object detector가 예측한 bounding box 중에서 정확한 bounding box를 선택하도록 하는 기법<br><br>
+
   > N. Bodla, B. Singh, R. Chellappa and L. Davis, Soft-NMS — Improving Object Detection with One Line of Code, in 2017
   
   #### Run-time analysis
@@ -72,7 +73,7 @@ date: "2024-05-02"
   > #### hard negative mining
   > &nbsp;positive example 과 negative example 을 균형적으로 학습시키 위한 기법.<br>
   > &nbsp;negative examples 가 있으면 confidence score 순으로 샘플을 선정 후, random하게 선정한 positive examples 를 갖고 하나의 mini-batch로 만들어 사용하는 방법.<br>
-  > &nbsp;일반적으로 negative examples의 갯수가 훨씬 많은데, 그중 일부만 사용하여 메모리의 사용량을 줄일 수 있다.
+  > &nbsp;일반적으로 negative examples의 갯수가 훨씬 많은데, 그중 일부만 사용하여 메모리의 사용량을 줄일 수 있다.<br><br>
 
   <br>
 ## Visualization, ablation, and modes of error
@@ -95,7 +96,7 @@ date: "2024-05-02"
   
 - ### Ablation studies
   > #### Ablation studies
-  > 특정 요소가 전체 시스템에 어떤 영향을 주는지 확인하고 싶을때 해당 요소를 제거한 시스템과 비교해보며 확인하는 분석 기법.
+  > 특정 요소가 전체 시스템에 어떤 영향을 주는지 확인하고 싶을때 해당 요소를 제거한 시스템과 비교해보며 확인하는 분석 기법.<br><br>
   
   <div style="text-align: center;">
     <img src="../images/posts/R-CNN_table2.png"><br>
@@ -212,19 +213,21 @@ date: "2024-05-02"
   <br>
 - ### Ablation study
   <div style="text-align: center;">
-    <img src="../images/posts/R-CNN_table4.png"><br>
+    <img src="../images/posts/R-CNN_tabel4.png"><br>
+  
     <b>Table 4: data usage choices, fine-tuning, bounding-box regression 에 관한 ILSVRC2013 ablation study </b><br>
   </div>
   <br>
 
 - ### Relationship to OverFeat
   R-CNN 과 OverFeat은 다음과 같은 차이점을 제외하면 매우 비슷하다. <br>
-  
+
   | R-CNN                  |   | OverFeat            |
   |------------------------|------|---------------------|
   | selective search       | 영역추정 | multi-scale pyramid |
   | per-class BB regressor | BB   | single BB regressor |
   
+  <br>
   OverFeat은 R-CNN보다 성능은 떨어지지만 9배 더 빠르다. 이러한 속도적 이점은 sliding windows 기법은 이미지 warping이 필요 하지 않기 때문이다.<br>
   <br>
 
@@ -237,5 +240,5 @@ date: "2024-05-02"
   
   을 통하여 좋은 결과를 보였다.
 
-  
+
   
