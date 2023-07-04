@@ -1,7 +1,7 @@
 ---
 title: "[논문 리뷰] R-CNN"
 slug: "/blog/rcnn-review"
-date: "2024-05-02"
+date: "2023-05-02"
 ---
 <br>
 
