@@ -16,8 +16,8 @@
   {
     "title": "카카오 구매 시스템(ERP) 구축",
     "detail" : [
-      "입고,납품 모듈 Backend & Frontend 전면 개발",
-      "그 외 모듈 부가기능 Backend & Frontend 개발",
+      "입고,납품 모듈 Backend & Frontend 개발",
+      "그 외 모듈 부가기능 Backend & Frontend 개발지원",
       "React, Java, Spring Boot, Mysql"
     ],
     "period" : "2022.5.2 ~ 2023.4.7"
@@ -25,16 +25,26 @@
   {
     "title": "KB증권 경영관리 인프라(ERP) 구축",
     "detail" : [
-      "예산 편성 모듈 Backend & Frontend 개발",
-      "예산 운영 모듈 Backend & Frontend 개발",
-      "Nexacro, Java, Spring Boot, Oracle"
+      "예산 편성 모듈 Backend & Frontend 개발지원",
+      "예산 운영 모듈 Backend & Frontend 개발지원",
+      "Nexacro, Java, Spring, Oracle"
     ],
     "period" : "2023.4.10 ~ 2023.10.18"
   },
   {
-    "title": "카카오 구매 시스템(ERP) 유지보수 & 추가개발",
+    "title": "카카오 구매 시스템(ERP) 운영",
     "detail" : [
+      "React, Java, Spring Boot, Mysql"
     ],
-    "period" : "2023.10.19 ~ 현재"
+    "period" : "2023.10.19 ~ 2024.06.31"
+  },
+  {
+    "title": "LG.com 글로벌사이트 운영",
+    "detail" : [
+      "V5.0 사이트 PDR(제품 스펙 전송 관리)배치 관리",
+      "V5.0 사이트 이슈 대응",
+      "JSP, Java, Spring, Mssql"
+    ],
+    "period" : "2024.07.01 ~ 현재"
   }
 ]

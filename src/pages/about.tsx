@@ -4,11 +4,8 @@ import "../styles/common.css"
 import "../styles/about.css"
 import {StaticImage} from "gatsby-plugin-image"
 import careerData from "../data/career.json"
-import {Badge} from "antd";
 import {ReactNode} from "react";
 const about : React.FC = () => {
-
-    console.log(careerData);
 
     return (
         <Layout>
