@@ -43,7 +43,7 @@
     "detail" : [
       "V5.0 사이트 PDR(제품 스펙 전송 관리)배치 관리",
       "V5.0 사이트 이슈 대응",
-      "JSP, Java, Spring, Mssql"
+      "JSP, freemarker, Java, Spring, MariaDB"
     ],
     "period" : "2024.07.01 ~ 현재"
   }
