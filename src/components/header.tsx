@@ -2,7 +2,11 @@ import * as React from "react"
 import { Link } from "gatsby"
 import ThemeContext from "../context/ThemeContext";
 
-const Header = ({ siteTitle }) => (
+type HeaderType = {
+    siteTitle : string;
+}
+
+const Header = ({ siteTitle } : HeaderType) => (
     <ThemeContext.Consumer>
         {theme => (
             <div>

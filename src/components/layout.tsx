@@ -12,7 +12,11 @@ import Header from "./header"
 import "../styles/layout.css"
 import ThemeContext from "../context/ThemeContext";
 
-const Layout = ({ children }) => {
+type LayoutType = {
+  children : React.ReactNode;
+}
+
+const Layout = ({ children } : LayoutType) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {

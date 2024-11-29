@@ -1,8 +1,27 @@
 import * as React from "react"
 import { graphql } from "gatsby";
 import Layout from "../components/layout"
+import "../styles/blog-templates.css"
 
-const postTemplate = ({ path, data }) => {
+type PostTemplateType = {
+  path : string;
+  data : PostTemplateDataType;
+}
+
+type PostTemplateFrontmatterType = {
+  title : string;
+}
+
+type PostTemplateMarkdownRemarkType = {
+  frontmatter: PostTemplateFrontmatterType;
+  html: string;
+}
+
+type PostTemplateDataType = {
+  markdownRemark : PostTemplateMarkdownRemarkType
+}
+
+const postTemplate = ({ path, data } : PostTemplateType) => {
     const blog = data.markdownRemark;
 
     return (

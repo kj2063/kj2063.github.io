@@ -1,0 +1,38 @@
+.titleStyle{
+    font-size: x-large;
+    font-weight: lighter;
+    text-decoration: none;
+}
+  
+.titleStyle:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 8px;
+}
+  
+  
+.light .titleStyle,
+.light .titleStyle:visited{
+    color: var(--color-text);
+}
+  
+.dark .titleStyle,
+.dark .titleStyle:visited {
+    color: var(--color-dark-text);
+}
+
+.dateStyle{
+    font-size: large;
+    font-weight: lighter;
+    color: var(--color-secondary);
+}
+  
+.postDiv{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  
+.blogTable > tr, th, td{
+    border: none !important;
+    text-align: left !important;
+}

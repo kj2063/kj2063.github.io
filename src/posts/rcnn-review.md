@@ -13,8 +13,7 @@ date: "2023-05-02"
 </div>
 
 1. 입력 이미지를 받는다.<br>
-2. `Selective Search` 를 통해 약 2000 여개의 영역을 제안(Region Proposals)한다.<br>
-2-1. 제안된 영역을 CNN을 사용하여 features를 얻기 위해 CNN의 input크기에 맞춰 일정한 크기로 조정한다.<br>
+2. `Selective Search` 를 통해 약 2000 여개의 영역을 제안(Region Proposals)한다.<br> + 제안된 영역을 CNN을 사용하여 features를 얻기 위해 CNN의 input크기에 맞춰 일정한 크기로 조정한다.<br>
 3. 크기를 조정한 영역을 `CNN(AlexNet)`에 넣어 features를 얻는다.<br>
 4. `Support Vector machines(SVM)`을 이용하여 구해진 features를 분류한다.<br><br>
 
@@ -27,14 +26,23 @@ date: "2023-05-02"
 
 - ### Object Localization
   &nbsp;논문에서 object localization을 위해 3가지 방법을 제시한다.<br><br>
-  1. <b>Regression</b> <br>
-    &nbsp;Szegedy 의 연구의 결과로 좋지 못함을 알고 채택하지 않음.<br>
-  > C.Szegedy, A.Toshev, and D.Erhan. Deep neural networks for object detection. In NIPS, 2013.
-  2. <b>Sliding Window</b><br>
-    &nbsp;R-CNN은 합성곱 층이 5개인 구조여서, 매우 큰 윈도우 (195\*195 pixels)와 Strides (32\*32 pixels)로는 정확한 localization 이 힘들기 때문에 채택하지 않음.<br><br>
-  3. <b>Region Proposals</b><br>
-     &nbsp;`Selective Search` 를 채택 함.<br>
-  > C. Gu, J. J. Lim, P. Arbelaez, and J. Malik. Recognition using regions. In CVPR, 2009.
+  <ol>
+    <li>
+      <b>Regression</b><br>
+      &nbsp;Szegedy 의 연구의 결과로 좋지 못함을 알고 채택하지 않음.<br>
+      <blockquote> C.Szegedy, A.Toshev, and D.Erhan. Deep neural networks for object detection. In NIPS, 2013.</blockquote>
+    </li>
+    <li>
+      <b>Sliding Window</b><br>
+      &nbsp;R-CNN은 합성곱 층이 5개인 구조여서, 매우 큰 윈도우 (195\*195 pixels)와 Strides (32\*32 pixels)로는 정확한 localization 이 힘들기 때문에 채택하지 않음.<br>
+    </li>
+    <li>
+      <b>Region Proposals</b><br>
+      &nbsp;`Selective Search` 를 채택 함.<br>
+      <blockquote> C. Gu, J. J. Lim, P. Arbelaez, and J. Malik. Recognition using regions. In CVPR, 2009.</blockquote>
+    </li>
+  </ol>
+  <br>
 
 - ### Feature Extraction
   &nbsp;CNN(AlexNet) 을 활용하여 각 region proposal에서 4096 차원의 feature vector을 추출한다.<br><br>
