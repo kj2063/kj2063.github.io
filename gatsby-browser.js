@@ -22,7 +22,7 @@ export const onRouteUpdate = ({ location, prevLocation }) => {
 
     /* 페이지 조회시 항상 스크롤 상단으로 이동 */
     if (location.pathname !== prevLocation?.pathname) {
-        setTimeout(() => {
+        requestAnimationFrame(() => {
             window.scrollTo(0, 0);
         })
     }
