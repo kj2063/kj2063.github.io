@@ -4,11 +4,26 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/
  */
 
-// You can delete this file if you're not using it
 import React from "react"
 
-import { ThemeProvider } from "./src/context/ThemeContext"
+import { ThemeProvider } from "@src/context/ThemeContext"
+import Layout from "@src/components/layout"
 
 export const wrapRootElement = ({ element }) => (
-    <ThemeProvider>{element}</ThemeProvider>
+    <ThemeProvider><Layout>{element}</Layout></ThemeProvider>
 )
+
+export const onRouteUpdate = ({ location, prevLocation }) => {
+    /* url 마지막 '/' 제거 */
+    if (location.pathname.endsWith('/') && location.pathname !== '/') {
+        const trimmedPath = location.pathname.slice(0, -1);
+        window.history.replaceState({}, '', trimmedPath);
+    }
+
+    /* 페이지 조회시 항상 스크롤 상단으로 이동 */
+    if (location.pathname !== prevLocation?.pathname) {
+        setTimeout(() => {
+            window.scrollTo(0, 0);
+        })
+    }
+};

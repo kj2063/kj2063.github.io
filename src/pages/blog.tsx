@@ -1,10 +1,9 @@
 import * as React from "react"
-import Layout from "../components/layout"
-import "../styles/index.css"
-import "../styles/blog.css"
+import "@src/styles/index.css"
+import "@src/styles/blog.css"
 import {graphql, Link} from "gatsby";
 import moment from "moment";
-import Seo from "../components/seo";
+import Seo from "@src/components/seo";
 
 type BlogFrontmatterType = {
     date : string;
@@ -37,18 +36,16 @@ const blog = (graphql : any) => {
     })
 
     return(
-        <Layout>
-            <div>
-                <h2 className={"mainColor"}>
-                    Blog
-                </h2>
-                <table className="blogTable">
-                    <tbody>
-                        {postArrRender}
-                    </tbody>
-                </table>
-            </div>
-        </Layout>
+        <div>
+            <h2 className={"mainColor"}>
+                Blog
+            </h2>
+            <table className="blogTable">
+                <tbody>
+                    {postArrRender}
+                </tbody>
+            </table>
+        </div>
     )
 }
 
@@ -70,11 +67,6 @@ export const query = graphql`
     }
 `;
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo title="Blog" />
 
 export default blog;

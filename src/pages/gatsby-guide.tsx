@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
 import Seo from "../components/seo"
 import "../styles/index.css"
 
@@ -69,7 +68,7 @@ const moreLinks = [
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
 const GatsbyGuide = () => (
-    <Layout>
+    <div>
         <div className={"textCenter"}>
             <p className={"intro"}>
                 <b>Example pages:</b>{" "}
@@ -102,7 +101,7 @@ const GatsbyGuide = () => (
                 {i !== moreLinks.length - 1 && <> · </>}
             </React.Fragment>
         ))}
-    </Layout>
+    </div>
 )
 
 /**

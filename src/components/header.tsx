@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import ThemeContext from "../context/ThemeContext";
+import ThemeContext from "@src/context/ThemeContext";
 
 type HeaderType = {
     siteTitle : string;

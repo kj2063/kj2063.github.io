@@ -1,7 +1,7 @@
 import * as React from "react"
 import { graphql } from "gatsby";
-import Layout from "../components/layout"
-import "../styles/blog-templates.css"
+import "@src/styles/blog-templates.css"
+import Seo from "@src/components/seo";
 
 type PostTemplateType = {
   path : string;
@@ -25,7 +25,6 @@ const postTemplate = ({ path, data } : PostTemplateType) => {
     const blog = data.markdownRemark;
 
     return (
-        <Layout>
         <div>
             <h2 className={"mainColor"}>
                 Blog
@@ -35,7 +34,6 @@ const postTemplate = ({ path, data } : PostTemplateType) => {
                 <div dangerouslySetInnerHTML={{ __html: blog.html }} />
             </div>
         </div>
-        </Layout>
     );
 }
 
@@ -49,5 +47,10 @@ export const query = graphql`
     }
   }
 `;
+
+export const Head = ({ data }: { data: any }) => {
+  const title = data.markdownRemark.frontmatter.title;
+  return <Seo title={title} />;
+}
 
 export default postTemplate;

@@ -10,7 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "../styles/layout.css"
-import ThemeContext from "../context/ThemeContext";
+import ThemeContext from "@src/context/ThemeContext";
 
 type LayoutType = {
   children : React.ReactNode;

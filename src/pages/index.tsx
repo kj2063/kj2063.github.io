@@ -1,14 +1,12 @@
 import * as React from "react"
+import Seo from "@src/components/seo";
+import "@src/styles/index.css"
+import "@src/styles/common.css"
 
-import Layout from "../components/layout"
-
-import "../styles/index.css"
-import "../styles/common.css"
 const IndexPage = () => {
 
 
     return(
-      <Layout>
         <div>
           <h2 className={"mainColor"}>
            Home
@@ -21,10 +19,9 @@ const IndexPage = () => {
                 <br/><br/>
             </div>
         </div>
-      </Layout>
     )
 }
 
-
+export const Head = () => <Seo title="Home" />
 
 export default IndexPage
