@@ -7,6 +7,13 @@
 /**
  * @type {import('gatsby').GatsbySSR['onRenderBody']}
  */
+
+/*
 exports.onRenderBody = ({ setHtmlAttributes }) => {
   setHtmlAttributes({ lang: `en` })
 }
+*/
+
+export const wrapPageElement = ({ element, props }) => {
+  return <Layout>{element}</Layout>
+};
