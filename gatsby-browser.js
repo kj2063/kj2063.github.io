@@ -21,13 +21,13 @@ export const wrapPageElement = ({ element, props }) => {
             window.scrollTo(0, 0);
         }, [pathname]);
 
-        return <>{children}</>;
+        return children;
     };
 
     return (
-        <ScrollToTop>
+        <ScrollToTop children={
             <Layout>{element}</Layout>
-        </ScrollToTop>
+        }/>
     )
 };
 
