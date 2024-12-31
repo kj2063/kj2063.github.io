@@ -248,14 +248,9 @@ pre tt:after {
 /* End Dark mode styles */
 
 /* antd style */
-/* tag - prod */
-:where(.css-pl1kfr).ant-tag{
+/* tag */
+.ant-tag{
   color: #149494 !important;
   border-color: #149494 !important;
-}
-/* tag - dev */
-:where(.css-dev-only-do-not-override-pl1kfr).ant-tag {
-  color: #149494;
-  border-color: #149494;
 }
 /* End antd styles*/
