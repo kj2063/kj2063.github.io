@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import { ConfigProvider} from 'antd';
 
 type ThemeProviderState = {
     children : React.ReactNode;
@@ -40,9 +41,20 @@ const ThemeProvider = ({children} : ThemeProviderState) => {
                 value={{
                     dark : dark,
                     toggleDark,
+                }}>
+            <ConfigProvider
+                theme={{
+                    token: {
+                        // Seed Token
+                        colorPrimary: '#149494',
+
+                        // Alias Token
+                        colorBorder: '#149494',
+                    },
                 }}
             >
-                {children}
+            {children}
+            </ConfigProvider>
         </ThemeContext.Provider>
     )
 }

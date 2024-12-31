@@ -2,6 +2,7 @@
 title: "자료구조 및 알고리즘"
 slug: "/blog/data-structure-and-algorithm"
 date: "2023-01-15"
+category: cs
 ---
 <br>
 

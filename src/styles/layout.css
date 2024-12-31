@@ -246,3 +246,11 @@ pre tt:after {
   background-color: #fefefe;
 }
 /* End Dark mode styles */
+
+/* antd style */
+/* tag */
+:where(.css-dev-only-do-not-override-pl1kfr).ant-tag {
+  color: #149494;
+  border-color: #149494;
+}
+/* End antd styles*/

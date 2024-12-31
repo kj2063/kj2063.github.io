@@ -36,3 +36,13 @@
     border: none !important;
     text-align: left !important;
 }
+
+.flexWarp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gridAlignCenter{
+    display: grid; 
+    place-items: center;
+}

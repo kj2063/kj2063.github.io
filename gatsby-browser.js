@@ -10,7 +10,9 @@ import { ThemeProvider } from "@src/context/ThemeContext"
 import Layout from "@src/components/layout"
 
 export const wrapRootElement = ({ element }) => {
-    return <ThemeProvider>{element}</ThemeProvider>
+    return (
+        <ThemeProvider>{element}</ThemeProvider>
+    )
 }
 
 export const wrapPageElement = ({ element, props }) => {

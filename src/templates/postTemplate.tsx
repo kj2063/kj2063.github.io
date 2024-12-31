@@ -2,6 +2,7 @@ import * as React from "react"
 import { graphql } from "gatsby";
 import "@src/styles/blog-templates.css"
 import Seo from "@src/components/seo";
+import { Link } from "gatsby"
 
 type PostTemplateType = {
   path : string;
@@ -33,6 +34,14 @@ const postTemplate = ({ path, data } : PostTemplateType) => {
                 <h1 className={"mgl30"} style={{fontWeight:'lighter',marginTop:'30px'}}>{blog.frontmatter.title}</h1>
                 <div dangerouslySetInnerHTML={{ __html: blog.html }} />
             </div>
+            <Link
+              to="/blog"
+              className={"main_a mainColor"}
+              style={{
+                  fontSize: `var(--font-sm)`,
+                  textDecoration: `none`,
+              }}
+            ><b>➯ to list of blog posts</b></Link>
         </div>
     );
 }

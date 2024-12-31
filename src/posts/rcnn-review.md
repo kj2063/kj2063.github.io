@@ -2,6 +2,7 @@
 title: "[논문 리뷰] R-CNN"
 slug: "/blog/rcnn-review"
 date: "2023-05-02"
+category: ai, cnn
 ---
 <br>
 
