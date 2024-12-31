@@ -51,6 +51,12 @@ const ThemeProvider = ({children} : ThemeProviderState) => {
                         // Alias Token
                         colorBorder: '#149494',
                     },
+                    components: {
+                        Tag: {
+                            colorBorder: '#149494',
+                            colorText: '#149494',
+                        },
+                    },
                 }}
             >
             {children}

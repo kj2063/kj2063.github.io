@@ -229,12 +229,6 @@ pre tt:after {
   cursor: pointer;
 }
 
-@media (min-width: 992px) {
-  .dark-switcher {
-
-  }
-}
-
 .dark {
   background-color: #2a2b2d;
   color: var(--color-dark-text);
@@ -246,11 +240,3 @@ pre tt:after {
   background-color: #fefefe;
 }
 /* End Dark mode styles */
-
-/* antd style */
-/* tag */
-.ant-tag{
-  color: #149494 !important;
-  border-color: #149494 !important;
-}
-/* End antd styles*/
