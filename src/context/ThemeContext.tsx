@@ -36,31 +36,29 @@ const ThemeProvider = ({children} : ThemeProviderState) => {
         }
     },[])
 
+    const antdThemeConfig:any = {
+        token: {
+            // Seed Token
+            colorPrimary: '#149494',
+
+            // Alias Token
+            colorBorder: '#149494',
+        },
+        components: {
+            Tag: {
+                colorBorder: '#149494',
+                colorText: '#149494',
+            },
+        },
+    }
+
     return (
         <ThemeContext.Provider
                 value={{
                     dark : dark,
                     toggleDark,
                 }}>
-            <ConfigProvider
-                theme={{
-                    token: {
-                        // Seed Token
-                        colorPrimary: '#149494',
-
-                        // Alias Token
-                        colorBorder: '#149494',
-                    },
-                    components: {
-                        Tag: {
-                            colorBorder: '#149494',
-                            colorText: '#149494',
-                        },
-                    },
-                }}
-            >
-            {children}
-            </ConfigProvider>
+            <ConfigProvider theme={antdThemeConfig}>{children}</ConfigProvider>
         </ThemeContext.Provider>
     )
 }
