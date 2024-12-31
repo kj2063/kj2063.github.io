@@ -250,7 +250,7 @@ pre tt:after {
 /* antd style */
 /* tag */
 .ant-tag{
-  color: #149494 !important;
-  border-color: #149494 !important;
+  color: #149494;
+  border-color: #149494;
 }
 /* End antd styles*/
