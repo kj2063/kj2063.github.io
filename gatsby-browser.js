@@ -4,10 +4,11 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/
  */
 
-import React, { useEffect} from "react"
+/* ssr config 인 gatsby-ssr.js 와 상태 맞춰주기 */
 
-import { ThemeProvider } from "@src/context/ThemeContext"
+import React, { useEffect} from "react"
 import Layout from "@src/components/layout"
+import { ThemeProvider } from "@src/context/ThemeContext"
 
 export const wrapRootElement = ({ element }) => {
     return (

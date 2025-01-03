@@ -38,18 +38,23 @@ const ThemeProvider = ({children} : ThemeProviderState) => {
 
     const antdThemeConfig:any = {
         token: {
-            // Seed Token
-            colorPrimary: '#149494',
-
-            // Alias Token
+            //default
             colorBorder: '#149494',
-        },
-        components: {
-            Tag: {
-                colorBorder: '#149494',
-                colorText: '#149494',
-            },
-        },
+            colorText: '#149494',
+
+            colorPrimary: '#149494',
+            colorPrimaryActive: '#117e7e',
+
+            colorPrimaryBorder: '#149494',
+            colorPrimaryBorderHover : '#17aaaa',
+
+            colorPrimaryText: '#149494',
+            colorPrimaryTextActive : '#117e7e',
+            colorPrimaryTextHover : '17aaaa',
+
+            colorPrimaryBg : '#f7fefe',
+            colorPrimaryBgHover : '#e6fcfc',
+        }
     }
 
     return (
@@ -58,7 +63,7 @@ const ThemeProvider = ({children} : ThemeProviderState) => {
                     dark : dark,
                     toggleDark,
                 }}>
-            <ConfigProvider theme={antdThemeConfig}>{children}</ConfigProvider>
+            <ConfigProvider theme={antdThemeConfig} >{children}</ConfigProvider>
         </ThemeContext.Provider>
     )
 }
