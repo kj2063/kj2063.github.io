@@ -223,11 +223,6 @@ pre tt:after {
 }
 
 /* Dark mode styles */
-.dark-switcher {
-  background: transparent;
-  cursor: pointer;
-}
-
 .dark .dark-switcher{
   background-color: #969696;
 }

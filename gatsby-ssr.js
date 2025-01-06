@@ -33,11 +33,3 @@ export const wrapPageElement = ({ element, props }) => {
       }/>
   )
 };
-
-export const onRouteUpdate = ({ location, prevLocation }) => {
-    /* url 마지막 '/' 제거 */
-    if (location.pathname.endsWith('/') && location.pathname !== '/') {
-        const trimmedPath = location.pathname.slice(0, -1);
-        window.history.replaceState({}, '', trimmedPath);
-    }
-};
