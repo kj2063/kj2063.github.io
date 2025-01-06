@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import ThemeContext from "@src/context/ThemeContext";
+import {StaticImage} from "gatsby-plugin-image"
 
 type HeaderType = {
     siteTitle : string;
@@ -42,7 +43,7 @@ const Header = ({ siteTitle } : HeaderType) => (
                     >
                         Blog
                     </Link>
-                    &nbsp;&nbsp;
+                    &ensp;
                     <Link
                         to="/about"
                         className={"main_a mainColor"}
@@ -53,10 +54,20 @@ const Header = ({ siteTitle } : HeaderType) => (
                     >
                         About
                     </Link>
-                    &nbsp;&nbsp;
-                    <button className="dark-switcher" onClick={theme.toggleDark}>
-                        {theme.dark ? <b>☀</b> : <b>☾</b>}
-                    </button>
+                    &emsp;
+                    <a href="https://github.com/kj2063">
+                        {theme.dark? 
+                            <StaticImage
+                                src={"../images/white-github-icon.svg"}
+                                width={30}
+                                alt={""}/>
+                            :
+                            <StaticImage
+                                src={"../images/black-github-icon.svg"}
+                                width={30}
+                                alt={""}/>
+                        }
+                    </a>
                 </div>
               </header>
             </div>

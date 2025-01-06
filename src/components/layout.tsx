@@ -7,10 +7,11 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-
+import { Switch } from 'antd';
 import Header from "./header"
 import "../styles/layout.css"
 import ThemeContext from "@src/context/ThemeContext";
+import {StaticImage} from "gatsby-plugin-image";
 
 type LayoutType = {
   children : React.ReactNode;
@@ -50,6 +51,11 @@ const Layout = ({ children } : LayoutType) => {
                   © 2022 by {data.site.siteMetadata?.title}
                 </footer>
               </div>
+              <Switch className="dark-switcher floating-switch" 
+                      checkedChildren={<StaticImage src={"../images/sun.svg"} width={16} alt={""}/>} 
+                      unCheckedChildren={<StaticImage src={"../images/moon.svg"} width={16} alt={""}/>}
+                      onClick={theme.toggleDark} 
+                      size="small"/>
           </div>
         )}
     </ThemeContext.Consumer>

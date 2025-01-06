@@ -225,8 +225,11 @@ pre tt:after {
 /* Dark mode styles */
 .dark-switcher {
   background: transparent;
-  border: none;
   cursor: pointer;
+}
+
+.dark .dark-switcher{
+  background-color: #969696;
 }
 
 .dark {
@@ -240,3 +243,12 @@ pre tt:after {
   background-color: #fefefe;
 }
 /* End Dark mode styles */
+
+.floating-switch {
+  position: fixed;
+  bottom: 20px; /* 하단에서의 거리 */
+  right: 20px; /* 우측에서의 거리 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
