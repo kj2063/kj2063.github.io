@@ -54,6 +54,7 @@ const Layout = ({ children } : LayoutType) => {
               <Switch className="dark-switcher floating-switch" 
                       checkedChildren={<StaticImage src={"../images/sun.svg"} width={16} alt={""}/>} 
                       unCheckedChildren={<StaticImage src={"../images/moon.svg"} width={16} alt={""}/>}
+                      checked={theme.dark ? false : true}
                       onClick={theme.toggleDark} 
                       size="small"/>
           </div>
