@@ -1,0 +1,10 @@
+ES Lint 적용을 위한 vscode setting
+
+1. eslint extension 을 설치한다.
+2. setting.json 에 아래 설정을 추가한다.
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "files.eol": "\n"
