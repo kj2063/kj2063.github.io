@@ -1,4 +1,6 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, {
+  useContext, useEffect, useMemo, useState,
+} from 'react';
 import { ConfigProvider } from 'antd';
 
 type ThemeProviderState = {
@@ -64,6 +66,14 @@ const ThemeProvider = ({ children } : ThemeProviderState) => {
       <ConfigProvider theme={antdThemeConfig}>{children}</ConfigProvider>
     </ThemeContext.Provider>
   );
+};
+
+export const useThemeContext = () => {
+  const themeContext = useContext(ThemeContext);
+  if (!themeContext) {
+    throw new Error('useTheme must be used within a ThemeProvider');
+  }
+  return themeContext;
 };
 
 export default ThemeContext;
