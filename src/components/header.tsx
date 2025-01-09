@@ -60,6 +60,7 @@ const Header = ({ siteTitle } : HeaderType) => {
             {dark
               ? (
                 <StaticImage
+                  key="white-github-icon"
                   src="../images/white-github-icon.svg"
                   width={30}
                   alt=""
@@ -67,6 +68,7 @@ const Header = ({ siteTitle } : HeaderType) => {
               )
               : (
                 <StaticImage
+                  key="black-github-icon"
                   src="../images/black-github-icon.svg"
                   width={30}
                   alt=""

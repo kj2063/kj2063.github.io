@@ -35,8 +35,8 @@ const blog = (queryResult : any) => {
   useEffect(() => {
     const handleResize = () => {
       // 브라우저 크기에 따라 열 너비를 동적으로 계산
-      const newFirstColumnWidth = Math.min(Math.max(window.innerWidth * 0.1, 80), 120);
-      const newThirdColumnWidth = Math.min(Math.max(window.innerWidth * 0.15, 80), 210);
+      const newFirstColumnWidth = Math.min(Math.max(window.innerWidth * 0.1, 50), 120);
+      const newThirdColumnWidth = Math.min(Math.max(window.innerWidth * 0.15, 40), 210);
 
       setFirstColumnWidth(`${newFirstColumnWidth}px`);
       setThirdColumnWidth(`${newThirdColumnWidth}px`);
