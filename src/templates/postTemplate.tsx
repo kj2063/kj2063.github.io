@@ -5,6 +5,7 @@ import '@src/styles/blog-templates.css';
 import * as React from 'react';
 import { graphql, Link } from 'gatsby';
 import Seo from '@src/components/seo';
+import '@src/styles/blog-templates.css';
 
 type PostTemplateFrontmatterType = {
   title : string;
