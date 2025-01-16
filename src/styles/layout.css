@@ -224,7 +224,7 @@ pre tt:after {
 
 /* Dark mode styles */
 .dark .dark-switcher{
-  background-color: #969696;
+  background-color: var(--color-secondary);
 }
 
 .dark {
@@ -238,6 +238,10 @@ pre tt:after {
   background-color: #fefefe;
 }
 /* End Dark mode styles */
+
+.dark hr {
+  background-color: var(--color-secondary);
+}
 
 .floating-switch {
   position: fixed;

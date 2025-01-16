@@ -10,6 +10,7 @@
 import React, { useEffect } from 'react';
 import Layout from '@src/components/layout';
 import { ThemeProvider } from '@src/context/ThemeContext';
+import 'katex/dist/katex.min.css';
 
 export const wrapRootElement = ({ element }) => (
   <ThemeProvider>{element}</ThemeProvider>

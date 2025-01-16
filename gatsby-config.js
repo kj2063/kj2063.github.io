@@ -49,6 +49,12 @@ module.exports = {
               maxWidth: 800,
             },
           },
+          {
+            resolve: `gatsby-remark-katex`, // LaTeX 지원
+            options: {
+              // katex 관련 설정이 필요하다면 여기에 추가
+            },
+          },
         ],
       },
     },
