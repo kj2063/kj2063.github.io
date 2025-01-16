@@ -83,7 +83,7 @@ $$
 F_1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}
 $$
 
-Recall(재현율)와 Precision(정밀도)을 이용하여 **조화평균**을 구하여 평가 척도를 구성하여 데이터가 불균형한 상태일때 주요 척도로 사용.
+Recall(재현율)와 Precision(정밀도)을 이용하여 **조화평균**을 구하여 평가 척도를 구성하여 **데이터가 불균형한 상태일때 주요 척도**로 사용.
 
 <br><br>
 <hr>
