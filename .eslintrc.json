@@ -46,7 +46,8 @@
     "react/no-unescaped-entities": "off",
     "@typescript-eslint/no-unused-vars": "off",
     "import/no-import-module-exports": "off",
-    "unicodeTextInMathMode": "off"
+    "unicodeTextInMathMode": "off",
+    "max-len": "off"
   },
   "settings": {
     "import/resolver": {

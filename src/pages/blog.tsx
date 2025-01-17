@@ -2,7 +2,9 @@ import * as React from 'react';
 import { graphql, Link } from 'gatsby';
 import moment from 'moment';
 import Seo from '@src/components/seo';
-import { Input, Tag } from 'antd';
+import {
+  Input, Tag, Divider, Button,
+} from 'antd';
 import { useEffect, useState } from 'react';
 import '@src/styles/index.css';
 import '@src/styles/blog.css';
@@ -23,15 +25,23 @@ type BlogPostNodeType = {
     node: BlogFrontmatterNodeType;
 }
 
+type tagListType = {
+  tagName : string;
+  tagCnt : number;
+}
+
 const { Search } = Input;
 
 const blog = (queryResult : any) => {
   const blogPostNodeArr = queryResult.data.allMarkdownRemark.edges;
   const [filteredPosts, setFilteredPosts] = useState(blogPostNodeArr);
 
-  const [firstColumnWidth, setFirstColumnWidth] = useState('80px');
-  const [thirdColumnWidth, setThirdColumnWidth] = useState('80px');
+  const [tagList, setTagList] = useState<tagListType[]>([]);
 
+  const [firstColumnWidth, setFirstColumnWidth] = useState<string>('80px');
+  const [thirdColumnWidth, setThirdColumnWidth] = useState<string>('80px');
+
+  /* useEffect : 블로그 테이블 칼럼사이즈 동적변환 */
   useEffect(() => {
     const handleResize = () => {
       // 브라우저 크기에 따라 열 너비를 동적으로 계산
@@ -49,6 +59,42 @@ const blog = (queryResult : any) => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  /* useEffect : 블로그 글 전체 태그정보 수집 */
+  useEffect(() => {
+    let tagListObj :tagListType[] = [];
+    const temptagListObj1 : tagListType[] = [];
+    const tempTagListObj2 : tagListType[] = [];
+    temptagListObj1.push({ tagName: 'ALL', tagCnt: 0 });
+
+    blogPostNodeArr
+      .map((obj:BlogPostNodeType) => obj.node.frontmatter.category.split(',').map((blogCategory:string) => blogCategory.trim().toUpperCase()))
+      .forEach((blogCategoryList:string[]) => {
+        temptagListObj1[0].tagCnt += 1;
+
+        blogCategoryList.forEach((blogCategory:string) => {
+          const tagObj = tempTagListObj2.find((item: tagListType) => item.tagName === blogCategory);
+
+          if (tagObj) {
+            tagObj.tagCnt += 1;
+          } else {
+            const newTagObj : tagListType = { tagName: blogCategory, tagCnt: 1 };
+            tempTagListObj2.push(newTagObj);
+          }
+        });
+      });
+
+    tempTagListObj2.sort((a, b) => {
+      if (a.tagName < b.tagName) return -1;
+      if (a.tagName > b.tagName) return 1;
+      return 0;
+    });
+
+    tagListObj = temptagListObj1.concat(tempTagListObj2);
+
+    setTagList(tagListObj);
+  }, []);
+
+  /* 블로그 글 제목/태그 검색 */
   const onSearch = (value: string) => {
     const lowerCaseValue = value.toLowerCase();
     const filtered = blogPostNodeArr.filter((obj:BlogPostNodeType) => {
@@ -62,6 +108,26 @@ const blog = (queryResult : any) => {
     setFilteredPosts(filtered);
   };
 
+  /* TagListArr Render */
+  const tagListArrRender = () => {
+    const onSearchTagName = (tagName: string) => {
+      let searchTagName = '';
+
+      if (tagName !== 'ALL') {
+        searchTagName = tagName;
+      }
+
+      onSearch(searchTagName);
+    };
+
+    const tagListRender = tagList.map((obj:tagListType, idx:number) => (
+      <Button className="tagListButton" id="tagList" variant="outlined" size="small" key={idx} onClick={() => { onSearchTagName(`${obj.tagName}`); }}>{`${obj.tagName} (${obj.tagCnt})`}</Button>
+    ));
+
+    return tagListRender;
+  };
+
+  /* PostArr Render */
   const postArrRender = filteredPosts.map((obj:BlogPostNodeType) => {
     const postData = obj.node.frontmatter;
 
@@ -70,8 +136,8 @@ const blog = (queryResult : any) => {
       .map((category) => category.trim().toUpperCase())
       .sort();
 
-    const CategoryArrRender = categoryData.map((category:string) => (
-      <Tag>{category}</Tag>
+    const CategoryArrRender = categoryData.map((category:string, idx:number) => (
+      <Tag id="category" key={idx}>{category}</Tag>
     ));
 
     return (
@@ -98,6 +164,11 @@ const blog = (queryResult : any) => {
         <div className="gridAlignCenter">
           <Search placeholder="글/태그 검색" allowClear onSearch={onSearch} style={{ width: 200 }} />
         </div>
+      </div>
+      <div>
+        <Divider style={{ borderColor: '#969696' }} orientation="left">Tag List</Divider>
+        {tagListArrRender()}
+        <Divider style={{ borderColor: '#969696' }} />
       </div>
       <table className="blogTable">
         <tbody>

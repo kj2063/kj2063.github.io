@@ -52,3 +52,7 @@
     display: grid; 
     place-items: center;
 }
+
+.tagListButton{
+    margin : 0 5px;
+}
