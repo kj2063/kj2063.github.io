@@ -39,3 +39,10 @@ table td {
   text-align: center;
 }
 /*table style END*/
+
+/* KaTeX 수식 크기 자동 조정 */
+.katex {
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: auto;
+}
