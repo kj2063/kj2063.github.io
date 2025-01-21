@@ -64,13 +64,9 @@ $$
 
 - **Accuracy (정확도)**
 
-<div>
-
 $$
 Accuracy(정확도) = \frac{TP + TN}{TP + TN + FP + FN}
 $$
-
-</div>
 
 전체 결과에서 True를 True로 False를 False로 예측한 비율 (precision과 recall과 다르게 False를 False라고 예측한 경우도 포함)
 
