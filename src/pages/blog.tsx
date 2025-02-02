@@ -6,6 +6,7 @@ import {
   Input, Tag, Divider, Button,
 } from 'antd';
 import { useEffect, useState } from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 import '@src/styles/index.css';
 import '@src/styles/blog.css';
 
@@ -166,7 +167,15 @@ const blog = (queryResult : any) => {
         </div>
       </div>
       <div>
-        <Divider style={{ borderColor: '#969696' }} orientation="left">Tag List</Divider>
+        <Divider style={{ borderColor: '#969696' }} orientation="left">
+          <StaticImage
+            key="tag-icon"
+            src="../images/tag-icon.svg"
+            width={30}
+            alt=""
+          />
+          Tag List
+        </Divider>
         {tagListArrRender()}
         <Divider style={{ borderColor: '#969696' }} />
       </div>
