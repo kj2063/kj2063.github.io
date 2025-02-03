@@ -168,13 +168,15 @@ const blog = (queryResult : any) => {
       </div>
       <div>
         <Divider style={{ borderColor: '#969696' }} orientation="left">
-          <StaticImage
-            key="tag-icon"
-            src="../images/tag-icon.svg"
-            width={30}
-            alt=""
-          />
-          Tag List
+          <span style={{ paddingRight: '20px' }}>
+            <StaticImage
+              key="tag-icon"
+              src="../images/tag-icon.svg"
+              width={30}
+              alt=""
+            />
+            Tag List
+          </span>
         </Divider>
         {tagListArrRender()}
         <Divider style={{ borderColor: '#969696' }} />
