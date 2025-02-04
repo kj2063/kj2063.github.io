@@ -1,0 +1,75 @@
+.roulette-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 50px;
+}
+
+.roulette-title {
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.roulette-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* 슬롯머신과 버튼 사이 간격 */
+}
+
+.roulette {
+  width: 200px;
+  height: 70px;
+  overflow: hidden;
+  border: 3px solid var(--color-primary);
+  border-radius: 20%;
+  position: relative;
+  box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2); /* 입체감 */
+}
+
+.roulette-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.roulette-item {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 버튼 스타일 */
+.roulette-button {
+  width: 70px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(180deg, var(--color-primary), var(--color-secondary));
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+  transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+/* 버튼 hover 효과 */
+.roulette-button:hover {
+  background: linear-gradient(180deg, #127979, #6e6d6d);
+  transform: scale(1.05);
+}
+
+/* 버튼이 회전 중일 때 비활성화 */
+.roulette-button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
