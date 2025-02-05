@@ -20,7 +20,7 @@
 
 .roulette {
   width: 200px;
-  height: 70px;
+  height: 68px;
   overflow: hidden;
   border: 3px solid var(--color-primary);
   border-radius: 20%;
