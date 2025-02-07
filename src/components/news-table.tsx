@@ -10,7 +10,7 @@ const NewsTable = () => {
   const [articles, setArticles] = useState<articleType[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
-  const apiKey = process.env.GATSBY_API_KEY;
+  const apiKey = process.env.GATSBY_NEWS_API_KEY;
 
   // 날짜 계산 (현재 날짜 기준 10일 전)
   const endDate = new Date();

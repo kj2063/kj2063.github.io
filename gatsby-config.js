@@ -9,7 +9,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV || "production"}`,
+  path: `.env.production`,
 });
 
 module.exports = {
