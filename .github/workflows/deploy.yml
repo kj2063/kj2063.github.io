@@ -3,7 +3,7 @@ name: Deploy Gatsby site to GitHub Pages
 on:
   push:
     branches:
-      - main  # main 브랜치에 푸시될 때 실행
+      - master  # main 브랜치에 푸시될 때 실행
 
 jobs:
   build:
