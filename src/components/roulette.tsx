@@ -47,7 +47,7 @@ const Roulette = () => {
   return (
     <div className="roulette-container">
       <div className="roulette-title">
-        <h3>✏️오늘의 개발공부✏️</h3>
+        <h3>✏️ 오늘의 개발공부</h3>
       </div>
       <div className="roulette-content">
         <div className="roulette">

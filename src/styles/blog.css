@@ -38,9 +38,10 @@
     width:100%;
 }
   
-.blogTable > tr, th, td{
+.blogTable tr, .blogTable th, .blogTable td{
     border: none !important;
     text-align: left !important;
+    padding: 10px 15px;
 }
 
 .flexWarp{

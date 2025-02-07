@@ -8,13 +8,13 @@ blockquote{
 }
 
 /*table style*/
-table {
+table:not([class]) {
   border-collapse: collapse;
   text-align: left;
   line-height: 1.5;
 }
 
-table thead th {
+table:not([class]) thead th {
   text-align: center;
   padding: 10px;
   font-weight: bold;
@@ -24,7 +24,7 @@ table thead th {
   border-bottom: 2px solid var(--color-secondary);
 }
 
-table tbody th {
+table:not([class]) tbody th {
   padding: 10px 15px;
   font-weight: bold;
   vertical-align: top;
@@ -32,7 +32,7 @@ table tbody th {
   background: #f3f6f7;
 }
 
-table td {
+table:not([class]) td {
   padding: 10px 15px;
   vertical-align: middle;
   border-bottom: 1px solid #ccc;

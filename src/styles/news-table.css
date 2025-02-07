@@ -1,0 +1,22 @@
+.news-table{
+    text-align: left;
+}
+
+.news-table th {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 5px 0;
+}
+
+.news-table td {
+    padding: 5px 15px;
+}
+
+.news-table a{
+    color: var(--color-primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.news-table a:hover{
+    text-decoration: underline;
+}
