@@ -10,7 +10,7 @@ const NewsTable = () => {
   const [articles, setArticles] = useState<articleType[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
-  const apiKey = 'd513e6cf816442df8989483cf16d96a1'; // 발급받은 NewsAPI 키
+  const apiKey = process.env.GATSBY_API_KEY;
 
   // 날짜 계산 (현재 날짜 기준 10일 전)
   const endDate = new Date();
@@ -40,7 +40,7 @@ const NewsTable = () => {
   }, []); // 빈 배열로 두어 컴포넌트가 처음 렌더링될 때만 호출
 
   const articleRender = () => (
-    articles.length > 0
+    articles && articles.length > 0
       ? articles.map((article, index) => (
         <tr key={`news-table-tr${index}`}>
           <td key={`news-table-td${index}`}>
