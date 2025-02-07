@@ -3,6 +3,7 @@
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
+  "homepage": "https://github.com/kj2063/kj2063.github.io",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@ant-design/icons": "^4.8.0",
