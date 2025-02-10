@@ -1,10 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import '@src/styles/news-table.css';
 
+type headlineType = {
+  main : string;
+}
+
 type articleType = {
-    web_url: string;
-    title: string;
-    abstract: string;
+  web_url: string;
+  title: string;
+  abstract: string;
+  headline: headlineType;
 }
 
 const NewsTable = () => {
@@ -35,6 +40,8 @@ const NewsTable = () => {
         );
         const data = await response.json();
 
+        console.log(data.response.docs);
+
         setNews(data.response.docs);
         setLoading(false);
       } catch (error) {
@@ -54,7 +61,7 @@ const NewsTable = () => {
             <a href={article.web_url} target="_blank" rel="noopener noreferrer">
               -
               {' '}
-              {article.abstract}
+              {article.headline.main}
             </a>
           </td>
         </tr>
