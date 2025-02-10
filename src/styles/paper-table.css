@@ -1,0 +1,29 @@
+.paper-table{
+    text-align: left;
+}
+
+.paper-table th {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 5px 0;
+}
+
+.paper-table th a{
+    color: inherit;
+}
+
+.paper-table td {
+    padding: 5px 15px;
+}
+
+.paper-table a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.paper-table td a {
+    color: var(--color-primary);
+}
+
+.paper-table a:hover{
+    text-decoration: underline;
+}

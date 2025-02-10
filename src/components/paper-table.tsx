@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '@src/styles/news-table.css';
+import '@src/styles/paper-table.css';
 
 type paperType = {
   title: string | null;
@@ -48,8 +48,8 @@ const PaperTable = () => {
   const articleRender = () => (
     papers && papers.length > 0
       ? papers.map((paper, index) => (
-        <tr key={`news-table-tr${index}`}>
-          <td key={`news-table-td${index}`}>
+        <tr key={`paper-table-tr${index}`}>
+          <td key={`paper-table-td${index}`}>
             <a href={paper.link as string} target="_blank" rel="noopener noreferrer">
               -
               {' '}
@@ -67,10 +67,13 @@ const PaperTable = () => {
 
   return (
     <div>
-      <table key="news-table" className="news-table">
+      <table key="paper-table" className="paper-table">
         <thead>
           <tr>
-            <th>📝 Computer Vision 관련 최신 논문</th>
+            <th>
+              📝&nbsp;
+              <a href="https://arxiv.org/list/cs.CV/recent?skip=50&show=50">Computer Vision 관련 최신 논문</a>
+            </th>
           </tr>
         </thead>
         <tbody>
