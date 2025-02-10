@@ -2,50 +2,59 @@ import React, { useEffect, useState } from 'react';
 import '@src/styles/news-table.css';
 
 type articleType = {
-    url: string;
+    web_url: string;
     title: string;
+    abstract: string;
 }
 
 const NewsTable = () => {
-  const [articles, setArticles] = useState<articleType[]>([]);
+  const [news, setNews] = useState<articleType[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
-  const apiKey = process.env.GATSBY_NEWS_API_KEY;
-
-  // 날짜 계산 (현재 날짜 기준 10일 전)
-  const endDate = new Date();
-  const startDate = new Date();
-  startDate.setDate(endDate.getDate() - 10);
-
-  const startDateStr = startDate.toISOString().split('T')[0]; // yyyy-MM-dd
-  const endDateStr = endDate.toISOString().split('T')[0]; // yyyy-MM-dd
-
-  const url = `https://newsapi.org/v2/everything?sources=wired,cnn&q=artificial+intelligence+OR+AI&from=${startDateStr}&to=${endDateStr}&sortBy=popularity&pageSize=10&apiKey=${apiKey}`;
-
   useEffect(() => {
-    const fetchData = async () => {
+    const apiKey = process.env.GATSBY_NEWS_API_KEY;
+
+    const formatDate = (date:Date) => {
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, '0'); // 월은 0부터 시작하므로 +1 필요
+      const day = String(date.getDate()).padStart(2, '0');
+      return `${year}${month}${day}`;
+    };
+
+    const fetchNews = async () => {
       try {
-        const response = await fetch(url);
+        const endDate = new Date();
+        const beginDate = new Date();
+        beginDate.setDate(endDate.getDate() - 10);
+
+        const endDateStr = formatDate(endDate);
+        const beginDateStr = formatDate(beginDate);
+
+        const response = await fetch(
+          `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=AI OR "Artificial Intelligence"&fq=section_name:("Science","Technology")&begin_date=${beginDateStr}&end_date=${endDateStr}&sort=newest&api-key=${apiKey}`,
+        );
         const data = await response.json();
 
-        setArticles(data.articles); // 뉴스 데이터를 상태에 저장
-        setLoading(false); // 데이터 로딩 완료
+        setNews(data.response.docs);
+        setLoading(false);
       } catch (error) {
-        setArticles([]);
+        setNews([]);
         setLoading(false);
       }
     };
 
-    fetchData();
-  }, []); // 빈 배열로 두어 컴포넌트가 처음 렌더링될 때만 호출
+    fetchNews();
+  }, []);
 
   const articleRender = () => (
-    articles && articles.length > 0
-      ? articles.map((article, index) => (
+    news && news.length > 0
+      ? news.map((article, index) => (
         <tr key={`news-table-tr${index}`}>
           <td key={`news-table-td${index}`}>
-            <a href={article.url} target="_blank" rel="noopener noreferrer">
-              {article.title}
+            <a href={article.web_url} target="_blank" rel="noopener noreferrer">
+              -
+              {' '}
+              {article.abstract}
             </a>
           </td>
         </tr>
