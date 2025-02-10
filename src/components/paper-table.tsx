@@ -72,7 +72,7 @@ const PaperTable = () => {
           <tr>
             <th>
               📝&nbsp;
-              <a href="https://arxiv.org/list/cs.CV/recent?skip=50&show=50">Computer Vision 관련 최신 논문</a>
+              <a href="https://arxiv.org/list/cs.CV/recent?skip=0&show=50">Computer Vision 관련 최신 논문</a>
             </th>
           </tr>
         </thead>
