@@ -372,7 +372,7 @@ category: bigdata
         - 가장 간단한 데이터 모델
         - 범위 질의는 사용이 어렵다(DB에서 지원하면 사용 가능)
         - 응용 프로그램 모델링이 복잡
-        - **ex)** DynamoDB(아마존), Redis
+        - **ex) DynamoDB(아마존), Redis**
     - **열기반(칼럼기반, Column-oriented) 데이터베이스**
         - 데이터를 로우가 아닌 칼럼기반으로 저장 및 처리
         - 연관된 데이터 위주로 읽는데 유리한 구조
@@ -380,12 +380,12 @@ category: bigdata
         - 동일 도메인의 열 값이 연속되므로 압축 효율이 좋다.
         - 범위 질의에 유리
         - **확장성이 보장됨**
-        - **ex)** Bigtable(구글), Cassandra(아파치), HBase, HyperTable
+        - **ex) Bigtable(구글), Cassandra(아파치), HBase, HyperTable**
     - **문서기반(Document-oriented) 데이터베이스**
         - 문서 형식의 정보를 저장, 검색, 관리하기 위한 데이터 베이스
         - 레코드간 관계 설명이 가능
         - 개념적으로 RDBMS와 비슷
-        - **ex)** SimpleDB(아마존), CouchDB(아파치), MongoDB
+        - **ex) SimpleDB(아마존), CouchDB(아파치), MongoDB**
 
 <br>
 
@@ -408,3 +408,11 @@ category: bigdata
 <br>
 
 - **대용량 실시간 서비스 데이터 저장**
+- 스파크(Spark), 스톰(Storm) 은 내장된 저장소를 제공하지 않기 때문에 외부 저장 시스템과의 연계가 필수적.
+
+<br>
+
+#### 6) 안정성과 신뢰성 확보 및 접근성 제어계획 수립
+- 빅데이터 저장시스템 안정성 및 신뢰성 확보
+    - 저장 계획 수립단계에서 용량산정
+- 접근성 제어계획 수립
