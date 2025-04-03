@@ -113,7 +113,7 @@ AP는 각 threshold에서의 precision의 가중합을 의미하며, 이때의 �
 값이 클 수록 높은 성능을 의미한다.<br>
 
 <div style="text-align: center;">
-  <img src="../images/posts/roc-precision-recall-compare.png"><br>
+  <img src="../images/posts/ROC-precision-recall-compare.png"><br>
   <b>ROC curve 와 precision-recall curve</b>
 </div>
 
@@ -133,7 +133,7 @@ AP는 각 threshold에서의 precision의 가중합을 의미하며, 이때의 �
 
 - **IoU (Intersection over Union)**
 <div style="text-align: center;">
-  <img src="../images/posts/iou.png"><br>
+  <img src="../images/posts/intersection-over-union.png"><br>
   <b>IoU</b><br>
 </div>
 
