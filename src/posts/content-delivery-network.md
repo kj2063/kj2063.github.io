@@ -58,6 +58,8 @@ category: web
         - 멀티 CDN을 관리하는 로드 밸런서, 라우팅 시스템 필요
         - 비용이 증가
 
+<br>
+
 ## CDN 캐싱 여부 확인
 CDN 제공하는 업체, 개발자의 요청에 따라 request header에 표시가 다를 수 있음.<br>
 개발자 도구에서 `X-Cache: HIT`, `cf-cache-status: HIT` 등 글로벌 서비스인데 cache 관련 여부가 있는경우 의심해 볼 것
