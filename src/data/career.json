@@ -9,7 +9,8 @@
   {
     "title": "중앙정보처리학원 교육 수료",
     "detail" : [
-      "JAVA 응용 소프트웨어 개발자 과정 수료"
+      "JAVA 응용 소프트웨어 개발자 과정 수료",
+      "JSP, Jquery, Java, Spring, Oracle"
     ],
     "period" : "2021.11.16 ~ 2022.4.28"
   },
@@ -43,7 +44,7 @@
     "detail" : [
       "V5.0 사이트 PDR(제품 스펙 전송 관리)배치 관리",
       "V5.0 사이트 이슈 대응",
-      "JSP, freemarker, Java, Spring, MariaDB"
+      "JSP, freemarker, Jquery, Java, Spring, MariaDB"
     ],
     "period" : "2024.07.01 ~ 현재"
   }
