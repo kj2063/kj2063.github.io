@@ -15,7 +15,7 @@ const PaperTable = () => {
     const fetchPapers = () => {
       setLoading(true);
 
-      fetch('https://export.arxiv.org/api/query?search_query=cat:cs.CV&sortBy=submittedDate&sortOrder=descending&max_results=10')
+      fetch('https://export.arxiv.org/api/query?search_query=cat:cs.AI&sortBy=submittedDate&sortOrder=descending&max_results=10')
         .then((response) => {
           if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
@@ -72,7 +72,7 @@ const PaperTable = () => {
           <tr>
             <th>
               📝&nbsp;
-              <a href="https://arxiv.org/list/cs.CV/recent?skip=0&show=50">Computer Vision 관련 최신 논문</a>
+              <a href="https://arxiv.org/list/cs.AI/recent?skip=0&show=50">AI 관련 최신 논문</a>
             </th>
           </tr>
         </thead>
