@@ -19,7 +19,7 @@
     "detail" : [
       "입고,납품 모듈 Backend & Frontend 개발",
       "그 외 모듈 부가기능 Backend & Frontend 개발지원",
-      "React, Java, Spring Boot, Mysql"
+      "React, TypeScript, Java, Spring Boot, Mysql"
     ],
     "period" : "2022.5.2 ~ 2023.4.7"
   },
@@ -35,7 +35,7 @@
   {
     "title": "카카오 구매 시스템(ERP) 운영",
     "detail" : [
-      "React, Java, Spring Boot, Mysql"
+      "React, TypeScript, Java, Spring Boot, Mysql"
     ],
     "period" : "2023.10.19 ~ 2024.06.31"
   },

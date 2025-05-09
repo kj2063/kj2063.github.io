@@ -2,6 +2,7 @@ import * as React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import careerData from '@src/data/career.json';
 import { ReactNode } from 'react';
+import { LinkedinOutlined, MailOutlined } from '@ant-design/icons';
 import Seo from '@src/components/seo';
 import '@src/styles/common.css';
 import '@src/styles/about.css';
@@ -28,6 +29,23 @@ const about : React.FC = () => (
         <br />
         이곳을 찾아주신 모든 분과 좋은 인연이 있기를 바라며, 감사합니다.
       </div>
+    </div>
+    <div className="contactDiv">
+      <button
+        type="button"
+        onClick={() => {
+          window.open(
+            'https://www.linkedin.com/in/jun-kwon-556246302/',
+            '_blank',
+            'noopener,noreferrer',
+          );
+        }}
+      >
+        <LinkedinOutlined style={{ fontSize: '25px' }} />
+      </button>
+      <button type="button" onClick={() => { window.location.href = `mailto:${['kwonjun8890', 'gmail.com'].join('@')}`; }}>
+        <MailOutlined style={{ fontSize: '25px' }} />
+      </button>
     </div>
     <div className="careerDiv">
       <h2>Experience</h2>

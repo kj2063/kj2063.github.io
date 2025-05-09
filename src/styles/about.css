@@ -1,6 +1,6 @@
 
 .careerDiv{
-    margin-top: 120px;
+    margin-top: 60px;
 }
 
 .careerDiv h2{
@@ -41,4 +41,29 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+.contactDiv{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contactDiv button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.light .contactDiv button{
+    color: var(--color-text);
+}
+.light .contactDiv button:hover{
+    color: var(--color-primary);
+}
+
+.dark .contactDiv button{
+    color: var(--color-dark-text);
+}
+.dark .contactDiv button:hover{
+    color: var(--color-primary);
 }
