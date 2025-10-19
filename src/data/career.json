@@ -46,6 +46,14 @@
       "V5.0 사이트 이슈 대응",
       "JSP, freemarker, Jquery, Java, Spring, MariaDB"
     ],
-    "period" : "2024.07.01 ~ 현재"
+    "period" : "2024.07.01 ~ 2025.06.30"
+  },
+  {
+    "title": "현대자동차 사천 청구재고 넥사크로 전환 및 기능개선",
+    "detail" : [
+      "불출관리 모듈 넥사크로 전환 및 기능개선",
+      "Nexacro, Java, Spring, Tibero"
+    ],
+    "period" : "2025.09.01 ~ 현재"
   }
 ]
