@@ -36,7 +36,14 @@ const UsingSSR = ({ serverData } : any) => (
   </div>
 );
 
-export const Head = () => <Seo title="Using SSR" />;
+export const Head = () => (
+  <Seo
+    title="Using SSR"
+    description="Gatsby SSR starter sample page."
+    pathname="/using-ssr"
+    noIndex
+  />
+);
 
 export default UsingSSR;
 

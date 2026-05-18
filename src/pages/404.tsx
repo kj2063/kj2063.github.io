@@ -8,6 +8,13 @@ const NotFoundPage = () => (
   </div>
 );
 
-export const Head = () => <Seo title="404: Not Found" />;
+export const Head = () => (
+  <Seo
+    title="404: Not Found"
+    description="요청한 페이지를 찾을 수 없습니다."
+    pathname="/404"
+    noIndex
+  />
+);
 
 export default NotFoundPage;

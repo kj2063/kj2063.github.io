@@ -13,12 +13,14 @@ import '@src/styles/blog.css';
 /* type */
 type BlogFrontmatterType = {
     date : string;
-    slug : string;
     title : string;
     category: string;
 }
 
 type BlogFrontmatterNodeType = {
+    fields: {
+      slug: string;
+    };
     frontmatter: BlogFrontmatterType;
 }
 
@@ -131,6 +133,7 @@ const blog = (queryResult : any) => {
   /* PostArr Render */
   const postArrRender = filteredPosts.map((obj:BlogPostNodeType) => {
     const postData = obj.node.frontmatter;
+    const postSlug = obj.node.fields.slug;
 
     const categoryData = postData.category
       .split(',')
@@ -142,12 +145,12 @@ const blog = (queryResult : any) => {
     ));
 
     return (
-      <tr className="postDiv" key={postData.slug}>
-        <td className="dateStyle" key={`${postData.slug}_firstColumn`} style={{ width: firstColumnWidth }}>{moment(postData.date).format('YYYY.MM.DD')}</td>
+      <tr className="postDiv" key={postSlug}>
+        <td className="dateStyle" key={`${postSlug}_firstColumn`} style={{ width: firstColumnWidth }}>{moment(postData.date).format('YYYY.MM.DD')}</td>
         <td>
-          <Link className="titleStyle" key={`${postData.slug}_secondColumn`} to={postData.slug}>{postData.title}</Link>
+          <Link className="titleStyle" key={`${postSlug}_secondColumn`} to={postSlug}>{postData.title}</Link>
         </td>
-        <td key={`${postData.slug}_thirdColumn`} style={{ width: thirdColumnWidth }}>
+        <td key={`${postSlug}_thirdColumn`} style={{ width: thirdColumnWidth }}>
           {CategoryArrRender}
         </td>
       </tr>
@@ -198,10 +201,11 @@ export const query = graphql`
       allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
         edges {
           node {
-            html
+            fields {
+              slug
+            }
             frontmatter{
                 title
-                slug
                 date
                 category
             }
@@ -211,6 +215,13 @@ export const query = graphql`
     }
 `;
 
-export const Head = () => <Seo title="Blog" />;
+export const Head = () => (
+  <Seo
+    title="Blog"
+    description="AI, 데이터 분석, 컴퓨터공학, 웹 개발 글을 모아둔 Jun's Blog 글 목록입니다."
+    pathname="/blog"
+    keywords={['AI', 'Data Analysis', 'Computer Science', 'Web Development']}
+  />
+);
 
 export default blog;

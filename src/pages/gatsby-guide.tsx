@@ -119,6 +119,13 @@ const GatsbyGuide = () => (
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="gatsby-guide" />;
+export const Head = () => (
+  <Seo
+    title="gatsby-guide"
+    description="Gatsby starter guide sample page."
+    pathname="/gatsby-guide"
+    noIndex
+  />
+);
 
 export default GatsbyGuide;

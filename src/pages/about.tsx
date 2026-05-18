@@ -81,6 +81,12 @@ const About : React.FC = () => (
   </div>
 );
 
-export const Head = () => <Seo title="About" />;
+export const Head = () => (
+  <Seo
+    title="About"
+    description="Jun Kwon의 경력, 관심 분야, 연락처를 소개하는 페이지입니다."
+    pathname="/about"
+  />
+);
 
 export default About;

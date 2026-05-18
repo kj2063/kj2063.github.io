@@ -8,10 +8,16 @@ import Seo from '@src/components/seo';
 import '@src/styles/blog-templates.css';
 
 type PostTemplateFrontmatterType = {
+  category : string;
+  date : string;
   title : string;
 }
 
 type PostTemplateMarkdownRemarkType = {
+  excerpt: string;
+  fields: {
+    slug: string;
+  };
   frontmatter: PostTemplateFrontmatterType;
   html: string;
 }
@@ -56,7 +62,13 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      excerpt(pruneLength: 160)
+      fields {
+        slug
+      }
       frontmatter {
+        category
+        date
         title
       }
     }
@@ -64,8 +76,24 @@ export const query = graphql`
 `;
 
 export const Head = ({ data }: { data: any }) => {
-  const { title } = data.markdownRemark.frontmatter;
-  return <Seo title={title} />;
+  const {
+    excerpt,
+    fields,
+    frontmatter,
+  } = data.markdownRemark;
+
+  console.log(excerpt);
+  return (
+    <Seo
+      title={frontmatter.title}
+      description={excerpt}
+      pathname={fields.slug}
+      article
+      category={frontmatter.category}
+      datePublished={frontmatter.date}
+      keywords={frontmatter.category.split(',').map((keyword: string) => keyword.trim())}
+    />
+  );
 };
 
 export default postTemplate;

@@ -80,7 +80,14 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({
   </div>
 );
 
-export const Head: HeadFC<DataProps> = () => <Seo title="Using TypeScript" />;
+export const Head: HeadFC<DataProps> = () => (
+  <Seo
+    title="Using TypeScript"
+    description="Gatsby TypeScript starter sample page."
+    pathname="/using-typescript"
+    noIndex
+  />
+);
 
 export default UsingTypescript;
 

@@ -11,9 +11,24 @@
 module.exports = {
   siteMetadata: {
     title: 'Jun\'s Blog',
-    description: 'Welcome to Jun\'s Blog',
-    author: '@kj2063',
-    siteUrl: 'https://kj2063.github.io/',
+    description: 'AI, 데이터 분석, 웹 개발을 기록하는 Jun\'s Blog입니다.',
+    author: 'Jun Kwon',
+    siteUrl: 'https://kj2063.github.io',
+    language: 'ko-KR',
+    defaultImage: '/icons/icon-512x512.png',
+    keywords: [
+      'Jun Kwon',
+      'Jun\'s Blog',
+      'AI',
+      'Data Analysis',
+      'Web Development',
+      'Gatsby',
+    ],
+    social: {
+      github: 'https://github.com/kj2063',
+      linkedin: 'https://www.linkedin.com/in/jun-kwon-556246302/',
+      twitter: '',
+    },
   },
   plugins: [
     'gatsby-plugin-image',

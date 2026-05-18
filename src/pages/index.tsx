@@ -10,6 +10,12 @@ const IndexPage = () => (
     <CuratedAiNews />
   </div>
 );
-export const Head = () => <Seo title="Home" />;
+export const Head = () => (
+  <Seo
+    title="Home"
+    description="AI 뉴스와 기술 글을 정리하는 Jun's Blog 홈입니다."
+    pathname="/"
+  />
+);
 
 export default IndexPage;

@@ -13,6 +13,13 @@ const SecondPage = () => (
   </div>
 );
 
-export const Head = () => <Seo title="Page two" />;
+export const Head = () => (
+  <Seo
+    title="Page two"
+    description="Gatsby starter sample page."
+    pathname="/page-2"
+    noIndex
+  />
+);
 
 export default SecondPage;

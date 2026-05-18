@@ -24,6 +24,13 @@ const UsingDSG = () => (
   </Layout>
 );
 
-export const Head = () => <Seo title="Using DSG" />;
+export const Head = () => (
+  <Seo
+    title="Using DSG"
+    description="Gatsby DSG starter sample page."
+    pathname="/using-dsg"
+    noIndex
+  />
+);
 
 export default UsingDSG;
