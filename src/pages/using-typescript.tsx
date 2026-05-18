@@ -17,6 +17,9 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({
   location,
 }) => (
   <div>
+    <h2 className="mainColor">
+      Using TypeScript
+    </h2>
     <h1>
       Gatsby supports
       {' '}

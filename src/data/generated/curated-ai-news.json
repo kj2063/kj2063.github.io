@@ -1,0 +1,127 @@
+{
+  "updatedAt": "2026-05-15T05:07:37.529Z",
+  "status": "ok",
+  "count": 12,
+  "items": [
+    {
+      "title": "Self-Distilled Agentic Reinforcement Learning",
+      "url": "http://arxiv.org/abs/2605.15155v1",
+      "source": "arXiv",
+      "type": "paper",
+      "publishedAt": "2026-05-14T17:51:26.000Z",
+      "summary": "Reinforcement learning (RL) has emerged as a central paradigm for post-training LLM agents, yet its trajectory-level reward signal provides only coarse supervision for long-horizon interaction. On-Policy Self-Distillation (OPSD) complements RL by introducing dense token-level gui",
+      "reason": "Selected for strong relevance to: agent, agents, ai.",
+      "score": 23
+    },
+    {
+      "title": "Best \"Brain\" for Agents Is Just Versioned Folders of Markdown Files",
+      "url": "https://extency.com/blog/markdown-versioned-folders-agent-brain-2026",
+      "source": "Hacker News",
+      "type": "discussion",
+      "publishedAt": "2026-05-14T20:15:26.000Z",
+      "summary": "32 points and 8 comments on Hacker News.",
+      "reason": "Selected for strong relevance to: agent, agents, ai.",
+      "score": 14
+    },
+    {
+      "title": "Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore",
+      "url": "https://aws.amazon.com/blogs/machine-learning/control-where-your-ai-agents-can-browse-with-chrome-enterprise-policies-on-amazon-bedrock-agentcore/",
+      "source": "AWS Machine Learning Blog",
+      "type": "news",
+      "publishedAt": "2026-05-14T17:17:35.000Z",
+      "summary": "In this post, you will configure Chrome enterprise policies to restrict a browser agent to a specific website, observe the policy enforcement through session recording, and demonstrate custom root CA certificates using a public test site. The walkthrough produces a working soluti",
+      "reason": "Selected for strong relevance to: agent, agents, ai.",
+      "score": 15
+    },
+    {
+      "title": "Improving token efficiency in GitHub Agentic Workflows",
+      "url": "https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/",
+      "source": "GitHub AI & ML Blog",
+      "type": "news",
+      "publishedAt": "2026-05-07T23:00:00.000Z",
+      "summary": "Agentic workflows that run on every pull request can quietly accumulate large API bills. Here's how we instrumented our own production workflows, found the inefficiencies, and built agents to fix them. The post Improving token efficiency in GitHub Agentic Workflows appeared first",
+      "reason": "Selected for strong relevance to: agent, agents.",
+      "score": 11
+    },
+    {
+      "title": "ReasoningBank: Enabling agents to learn from experience",
+      "url": "https://research.google/blog/reasoningbank-enabling-agents-to-learn-from-experience/",
+      "source": "Google Research Blog",
+      "type": "research",
+      "publishedAt": "2026-04-21T16:42:22.000Z",
+      "summary": "Generative AI",
+      "reason": "Selected for strong relevance to: agent, agents, ai.",
+      "score": 19
+    },
+    {
+      "title": "Is Grep All You Need? How Agent Harnesses Reshape Agentic Search",
+      "url": "http://arxiv.org/abs/2605.15184v1",
+      "source": "arXiv",
+      "type": "paper",
+      "publishedAt": "2026-05-14T17:58:41.000Z",
+      "summary": "Recent advances in Large Language Model (LLM) agents have enabled complex agentic workflows where models autonomously retrieve information, call tools, and reason over large corpora to complete tasks on behalf of users. Despite the growing adoption of retrieval-augmented generati",
+      "reason": "Selected for strong relevance to: agent, agents, llm.",
+      "score": 20
+    },
+    {
+      "title": "MeMo: Memory as a Model",
+      "url": "http://arxiv.org/abs/2605.15156v1",
+      "source": "arXiv",
+      "type": "paper",
+      "publishedAt": "2026-05-14T17:51:34.000Z",
+      "summary": "Large language models (LLMs) achieve strong performance across a wide range of tasks, but remain frozen after pretraining until subsequent updates. Many real-world applications require timely, domain-specific information, motivating the need for efficient mechanisms to incorporat",
+      "reason": "Selected for strong relevance to: ai, llm, large language model.",
+      "score": 17
+    },
+    {
+      "title": "Modernize your workflows: Amazon WorkSpaces now gives AI agents their own desktop (preview)",
+      "url": "https://aws.amazon.com/blogs/aws/modernize-your-workflows-amazon-workspaces-now-gives-ai-agents-their-own-desktop-preview/",
+      "source": "AWS News Blog",
+      "type": "news",
+      "publishedAt": "2026-05-05T17:23:40.000Z",
+      "summary": "Amazon WorkSpaces now lets AI agents securely operate legacy desktop applications—without APIs or modernization—using IAM authentication, MCP support, and computer vision within existing security frameworks.",
+      "reason": "Selected for strong relevance to: agent, agents, ai.",
+      "score": 17
+    },
+    {
+      "title": "FutureSim: Replaying World Events to Evaluate Adaptive Agents",
+      "url": "http://arxiv.org/abs/2605.15188v1",
+      "source": "arXiv",
+      "type": "paper",
+      "publishedAt": "2026-05-14T17:59:28.000Z",
+      "summary": "AI agents are being increasingly deployed in dynamic, open-ended environments that require adapting to new information as it arrives. To efficiently measure this capability for realistic use-cases, we propose building grounded simulations that replay real-world events in the orde",
+      "reason": "Selected for strong relevance to: agent, agents, ai.",
+      "score": 16
+    },
+    {
+      "title": "ATLAS: Agentic or Latent Visual Reasoning? One Word is Enough for Both",
+      "url": "http://arxiv.org/abs/2605.15198v1",
+      "source": "arXiv",
+      "type": "paper",
+      "publishedAt": "2026-05-14T17:59:55.000Z",
+      "summary": "Visual reasoning, often interleaved with intermediate visual states, has emerged as a promising direction in the field. A straightforward approach is to directly generate images via unified models during reasoning, but this is computationally expensive and architecturally non-tri",
+      "reason": "Selected for strong relevance to: agent, ai, reasoning.",
+      "score": 15
+    },
+    {
+      "title": "Eradicating Negative Transfer in Multi-Physics Foundation Models via Sparse Mixture-of-Experts Routing",
+      "url": "http://arxiv.org/abs/2605.15179v1",
+      "source": "arXiv",
+      "type": "paper",
+      "publishedAt": "2026-05-14T17:58:15.000Z",
+      "summary": "Scaling Scientific Machine Learning (SciML) toward universal foundation models is bottlenecked by negative transfer: the simultaneous co-training of disparate partial differential equation (PDE) regimes can induce gradient conflict, unstable optimization, and plasticity loss in d",
+      "reason": "Selected for strong relevance to: ai, foundation model, training.",
+      "score": 15
+    },
+    {
+      "title": "Securing AI agents: How AWS and Cisco AI Defense scale MCP and A2A deployments",
+      "url": "https://aws.amazon.com/blogs/machine-learning/securing-ai-agents-how-aws-and-cisco-ai-defense-scale-mcp-and-a2a-deployments/",
+      "source": "AWS Machine Learning Blog",
+      "type": "news",
+      "publishedAt": "2026-05-13T17:33:16.000Z",
+      "summary": "The Cisco and AWS partnership addresses three challenges enterprises face when scaling AI agents: visibility gaps, security bottlenecks, and compliance risks. In this post, we explore how you can overcome AI security challenges through automated scanning and unified governance.",
+      "reason": "Selected for strong relevance to: agent, agents, ai.",
+      "score": 15
+    }
+  ]
+}

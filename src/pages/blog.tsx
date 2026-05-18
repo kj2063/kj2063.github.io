@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby';
 import moment from 'moment';
 import Seo from '@src/components/seo';
 import {
-  Input, Tag, Divider, Button,
+  Input, Tag, Button,
 } from 'antd';
 import { useEffect, useState } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -122,7 +122,7 @@ const blog = (queryResult : any) => {
     };
 
     const tagListRender = tagList.map((obj:tagListType, idx:number) => (
-      <Button className="tagListButton" id="tagList" variant="outlined" size="small" key={idx} onClick={() => { onSearchTagName(`${obj.tagName}`); }}>{`${obj.tagName} (${obj.tagCnt})`}</Button>
+      <Button className="tagListButton" variant="outlined" size="small" key={idx} onClick={() => { onSearchTagName(`${obj.tagName}`); }}>{`${obj.tagName} (${obj.tagCnt})`}</Button>
     ));
 
     return tagListRender;
@@ -138,7 +138,7 @@ const blog = (queryResult : any) => {
       .sort();
 
     const CategoryArrRender = categoryData.map((category:string, idx:number) => (
-      <Tag id="category" key={idx}>{category}</Tag>
+      <Tag className="categoryTag" key={idx}>{category}</Tag>
     ));
 
     return (
@@ -155,44 +155,47 @@ const blog = (queryResult : any) => {
   });
 
   return (
-    <div>
-      <div className="flexWarp">
-        <div>
-          <h2 className="mainColor">
+    <div className="blogPage">
+      <section className="blogHeader">
+        <div className="blogTitleBlock">
+          <h2 className="mainColor blogTitle">
             Blog
           </h2>
         </div>
-        <div className="gridAlignCenter">
-          <Search placeholder="글/태그 검색" allowClear onSearch={onSearch} style={{ width: 200 }} />
+        <div className="blogSearchArea">
+          <Search className="blogSearchInput" placeholder="글/태그 검색" allowClear onSearch={onSearch} />
         </div>
-      </div>
-      <div>
-        <Divider style={{ borderColor: '#969696' }} orientation="left">
-          <span style={{ paddingRight: '20px' }}>
+      </section>
+      <section className="blogFilterPanel" aria-label="Blog filters">
+        <div className="blogFilterHeader">
+          <span className="blogFilterTitle">
             <StaticImage
               key="tag-icon"
               src="../images/tag-icon.svg"
-              width={30}
+              width={24}
               alt=""
             />
             Tag List
           </span>
-        </Divider>
-        {tagListArrRender()}
-        <Divider style={{ borderColor: '#969696' }} />
+        </div>
+        <div className="blogTagList">
+          {tagListArrRender()}
+        </div>
+      </section>
+      <div className="blogListWrap">
+        <table className="blogTable">
+          <tbody>
+            {postArrRender}
+          </tbody>
+        </table>
       </div>
-      <table className="blogTable">
-        <tbody>
-          {postArrRender}
-        </tbody>
-      </table>
     </div>
   );
 };
 
 export const query = graphql`
   query {
-      allMarkdownRemark (sort: {fields:frontmatter___date,order:DESC}){ 
+      allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
         edges {
           node {
             html

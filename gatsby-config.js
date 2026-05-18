@@ -8,17 +8,12 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
-require("dotenv").config({
-  path: `.env.production`,
-});
-
 module.exports = {
   siteMetadata: {
     title: 'Jun\'s Blog',
     description: 'Welcome to Jun\'s Blog',
     author: '@kj2063',
     siteUrl: 'https://kj2063.github.io/',
-    apiKey: process.env.GATSBY_NEWS_API_KEY,
   },
   plugins: [
     'gatsby-plugin-image',

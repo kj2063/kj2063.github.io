@@ -7,7 +7,6 @@
 
 import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { Switch } from 'antd';
 import { StaticImage } from 'gatsby-plugin-image';
 import { useThemeContext } from '@src/context/ThemeContext';
 import Header from './header';
@@ -19,6 +18,7 @@ type LayoutType = {
 
 const Layout = ({ children } : LayoutType) => {
   const { dark, toggleDark } = useThemeContext();
+  const themeToggleLabel = dark ? '라이트 모드로 전환' : '다크 모드로 전환';
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -33,34 +33,49 @@ const Layout = ({ children } : LayoutType) => {
   return (
     <div className={dark ? 'dark' : 'light'}>
       <Header siteTitle={data.site.siteMetadata?.title} />
-      <div
-        style={{
-          margin: '0 auto',
-          maxWidth: 'var(--size-content)',
-          padding: 'var(--size-gutter)',
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: '100px',
-            fontSize: 'var(--font-sm)',
-            color: 'var(--color-secondary)',
-          }}
-        >
-          © 2022 by
-          {' '}
-          {data.site.siteMetadata?.title}
+      <div className="siteShell">
+        <main className="siteMain">{children}</main>
+        <footer className="siteFooter">
+          <div className="siteFooterInner">
+            <p className="siteFooterDescription">
+              © 2022 by
+              {' '}
+              <strong className="siteFooterTitle">{data.site.siteMetadata?.title}</strong>
+            </p>
+          </div>
         </footer>
       </div>
-      <Switch
-        className="dark-switcher floating-switch"
-        checkedChildren={<StaticImage src="../images/sun.svg" width={16} alt="" />}
-        unCheckedChildren={<StaticImage src="../images/moon.svg" width={16} alt="" />}
-        checked={!dark}
+      <button
+        type="button"
+        className={dark ? 'themeToggle floatingThemeToggle isDark' : 'themeToggle floatingThemeToggle isLight'}
+        aria-label={themeToggleLabel}
+        aria-checked={dark}
+        role="switch"
+        title={themeToggleLabel}
         onClick={toggleDark}
-        size="small"
-      />
+      >
+        <span className="themeToggleTrack" aria-hidden="true">
+          <span className="themeToggleThumb">
+            {dark
+              ? (
+                <StaticImage
+                  key="theme-moon-icon"
+                  src="../images/moon.svg"
+                  width={14}
+                  alt=""
+                />
+              )
+              : (
+                <StaticImage
+                  key="theme-sun-icon"
+                  src="../images/sun.svg"
+                  width={14}
+                  alt=""
+                />
+              )}
+          </span>
+        </span>
+      </button>
     </div>
   );
 };

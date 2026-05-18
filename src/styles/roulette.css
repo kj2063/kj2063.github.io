@@ -73,3 +73,59 @@
   background: gray;
   cursor: not-allowed;
 }
+
+/* Refined roulette widget */
+.roulette-container {
+  align-items: stretch;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--color-secondary-soft);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-soft);
+  margin-top: var(--space-5);
+  max-width: 420px;
+  padding: var(--space-4);
+}
+
+.dark .roulette-container {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.roulette-title {
+  color: var(--color-primary);
+  text-shadow: none;
+}
+
+.roulette-title h3 {
+  margin-bottom: var(--space-3);
+}
+
+.roulette-content {
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.roulette {
+  border-radius: var(--border-radius);
+  flex: 1 1 200px;
+}
+
+.roulette-button {
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 18px rgba(20, 148, 148, 0.22);
+  flex: 0 0 auto;
+}
+
+@media (max-width: 420px) {
+  .roulette-container {
+    padding: var(--space-3);
+  }
+
+  .roulette,
+  .roulette-item {
+    width: 100%;
+  }
+
+  .roulette-button {
+    width: 100%;
+  }
+}

@@ -4,6 +4,9 @@ import Seo from '@src/components/seo';
 
 const SecondPage = () => (
   <div>
+    <h2 className="mainColor">
+      Page 2
+    </h2>
     <h1>Hi from the second page</h1>
     <p>Welcome to page 2</p>
     <Link to="/">Go back to the homepage</Link>

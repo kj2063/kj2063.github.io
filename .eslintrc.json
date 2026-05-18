@@ -22,7 +22,7 @@
   ],
   "rules": {
     "semi": ["error", "always"],
-    "linebreak-style": ["error", "unix"],
+    "linebreak-style": "off",
     "quotes": ["error", "single"],
     "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
     "react/function-component-definition": [

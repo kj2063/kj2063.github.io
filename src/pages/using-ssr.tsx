@@ -4,6 +4,9 @@ import Seo from '@src/components/seo';
 
 const UsingSSR = ({ serverData } : any) => (
   <div>
+    <h2 className="mainColor">
+      Using SSR
+    </h2>
     <h1>
       This page is
       {' '}

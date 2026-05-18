@@ -3,38 +3,43 @@ name: Deploy Gatsby site to GitHub Pages
 on:
   push:
     branches:
-      - master  # master 브랜치에 푸시될 때 실행
+      - master
+  schedule:
+    - cron: '15 20 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. 리포지토리 체크아웃
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      # 2. Node.js 설정
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '24'
+          cache: npm
 
-      # 3. 의존성 설치
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      # 4. .env.production 파일 생성 (GitHub Secrets 사용)
-      - name: Create .env.production file
-        run: echo "GATSBY_NEWS_API_KEY=${{ secrets.NEWS_API_KEY }}" > .env.production
+      - name: Update curated AI feed
+        run: npm run update:feeds
 
-      # 5. Gatsby 사이트 빌드
       - name: Build Gatsby site
         run: npm run build
 
-      # 6. GitHub Pages에 배포
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # 배포할 브랜치
-          folder: public  # Gatsby의 빌드 출력 폴더
+          branch: gh-pages
+          folder: public

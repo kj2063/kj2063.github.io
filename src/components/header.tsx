@@ -12,51 +12,35 @@ const Header = ({ siteTitle } : HeaderType) => {
 
   return (
     <div>
-      <header
-        style={{
-          margin: '0 auto',
-          padding: 'var(--space-4) var(--size-gutter)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-        }}
-      >
+      <header className="siteHeader">
         <Link
           to="/"
-          className="main_a mainColor"
-          style={{
-            fontSize: 'var(--font-md)',
-            textDecoration: 'none',
-            fontWeight: 'lighter',
-            textDecorationLine: 'underline',
-          }}
+          className="main_a mainColor siteBrand"
+          aria-label={`${siteTitle} 홈으로 이동`}
         >
-          <b>{siteTitle}</b>
+          <StaticImage
+            src="../images/juns-blog-logo.png"
+            width={180}
+            alt=""
+            className="siteBrandLogo"
+            placeholder="none"
+            loading="eager"
+          />
         </Link>
-        <div>
+        <nav className="siteNav" aria-label="Primary navigation">
           <Link
             to="/blog"
-            className="main_a mainColor"
-            style={{
-              fontSize: 'var(--font-sm)',
-              textDecoration: 'none',
-            }}
+            className="main_a mainColor siteNavLink"
           >
             Blog
           </Link>
-                  &ensp;
           <Link
             to="/about"
-            className="main_a mainColor"
-            style={{
-              fontSize: 'var(--font-sm)',
-              textDecoration: 'none',
-            }}
+            className="main_a mainColor siteNavLink"
           >
             About
           </Link>
-                  &emsp;
-          <a href="https://github.com/kj2063">
+          <a className="siteGithubLink" href="https://github.com/kj2063" aria-label="GitHub">
             {dark
               ? (
                 <StaticImage
@@ -75,7 +59,7 @@ const Header = ({ siteTitle } : HeaderType) => {
                 />
               )}
           </a>
-        </div>
+        </nav>
       </header>
     </div>
   );

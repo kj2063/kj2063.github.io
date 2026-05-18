@@ -69,6 +69,9 @@ const utmParameters = '?utm_source=starter&utm_medium=start-page&utm_campaign=de
 
 const GatsbyGuide = () => (
   <div>
+    <h2 className="mainColor">
+      Gatsby Guide
+    </h2>
     <div className="textCenter">
       <p className="intro">
         <b>Example pages:</b>

@@ -28,9 +28,9 @@ const ThemeProvider = ({ children } : ThemeProviderState) => {
 
   useEffect(() => {
     // Getting dark mode value from localStorage!
-    const lsDark = JSON.parse(localStorage.getItem('dark') as string);
-    if (lsDark) {
-      setDark(lsDark);
+    const storedDark = localStorage.getItem('dark');
+    if (storedDark !== null) {
+      setDark(JSON.parse(storedDark));
     } else if (supportsDarkMode()) {
       setDark(true);
     }
@@ -50,7 +50,7 @@ const ThemeProvider = ({ children } : ThemeProviderState) => {
 
       colorPrimaryText: '#149494',
       colorPrimaryTextActive: '#117e7e',
-      colorPrimaryTextHover: '17aaaa',
+      colorPrimaryTextHover: '#17aaaa',
 
       colorPrimaryBg: '#f7fefe',
       colorPrimaryBgHover: '#e6fcfc',

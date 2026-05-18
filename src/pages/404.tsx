@@ -3,7 +3,7 @@ import Seo from '@src/components/seo';
 
 const NotFoundPage = () => (
   <div>
-    <h1>404: Not Found</h1>
+    <h2 className="mainColor">404: Not Found</h2>
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
   </div>
 );

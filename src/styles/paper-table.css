@@ -27,3 +27,37 @@
 .paper-table a:hover{
     text-decoration: underline;
 }
+
+/* Refined feed table */
+.paper-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.paper-table th {
+    border-bottom: 1px solid var(--color-primary-soft);
+    color: var(--color-primary);
+    font-size: var(--font-md);
+    text-shadow: none;
+}
+
+.paper-table td {
+    border-bottom: 1px solid var(--color-secondary-soft);
+    line-height: var(--line-height-loose);
+    padding: var(--space-2) 0;
+}
+
+.paper-table a {
+    line-height: var(--line-height-normal);
+}
+
+@media (max-width: 640px) {
+    .paper-table,
+    .paper-table tbody,
+    .paper-table tr,
+    .paper-table td {
+        display: block;
+        width: 100%;
+    }
+}
