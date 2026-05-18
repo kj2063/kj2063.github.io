@@ -82,7 +82,6 @@ export const Head = ({ data }: { data: any }) => {
     frontmatter,
   } = data.markdownRemark;
 
-  console.log(excerpt);
   return (
     <Seo
       title={frontmatter.title}
