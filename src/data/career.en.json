@@ -1,0 +1,59 @@
+[
+  {
+    "title": "Sejong University Graduate School, Gravitational Lensing and Galaxy Dynamics Lab research",
+    "detail": [
+      "Analyzed data using Python libraries such as NumPy, SciPy, SymPy, Astropy, and Matplotlib"
+    ],
+    "period": "2020.11.30 ~ 2021.10.29"
+  },
+  {
+    "title": "Completed training at Chung-Ang Information Processing Academy",
+    "detail": [
+      "Completed Java application software developer course",
+      "JSP, jQuery, Java, Spring, Oracle"
+    ],
+    "period": "2021.11.16 ~ 2022.4.28"
+  },
+  {
+    "title": "Kakao purchasing system (ERP) implementation",
+    "detail": [
+      "Developed backend and frontend features for receiving and delivery modules",
+      "Supported backend and frontend development for additional module features",
+      "React, TypeScript, Java, Spring Boot, MySQL"
+    ],
+    "period": "2022.5.2 ~ 2023.4.7"
+  },
+  {
+    "title": "KB Securities management infrastructure (ERP) implementation",
+    "detail": [
+      "Supported backend and frontend development for budget planning module",
+      "Supported backend and frontend development for budget operation module",
+      "Nexacro, Java, Spring, Oracle"
+    ],
+    "period": "2023.4.10 ~ 2023.10.18"
+  },
+  {
+    "title": "Kakao purchasing system (ERP) operations",
+    "detail": [
+      "React, TypeScript, Java, Spring Boot, MySQL"
+    ],
+    "period": "2023.10.19 ~ 2024.06.31"
+  },
+  {
+    "title": "LG.com global site operations",
+    "detail": [
+      "Managed V5.0 site PDR batch processes for product specification transfer",
+      "Handled V5.0 site issues",
+      "JSP, FreeMarker, jQuery, Java, Spring, MariaDB"
+    ],
+    "period": "2024.07.01 ~ 2025.06.30"
+  },
+  {
+    "title": "Hyundai Motor Company Sacheon billing inventory Nexacro migration and feature improvements",
+    "detail": [
+      "Migrated the issuance management module to Nexacro and improved features",
+      "Nexacro, Java, Spring, Tibero"
+    ],
+    "period": "2025.09.01 ~ 2025.12.31"
+  }
+]

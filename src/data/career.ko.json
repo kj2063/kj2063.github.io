@@ -1,59 +1,59 @@
 [
   {
     "title": "세종대학교 대학원 중력렌즈 및 은하역학 연구실 연구",
-    "detail" : [
+    "detail": [
       "python 의 numpy, scipy, sympy, astropy, matplotlib 등을 이용한 데이터 분석"
     ],
-    "period" : "2020.11.30 ~ 2021.10.29"
+    "period": "2020.11.30 ~ 2021.10.29"
   },
   {
     "title": "중앙정보처리학원 교육 수료",
-    "detail" : [
+    "detail": [
       "JAVA 응용 소프트웨어 개발자 과정 수료",
       "JSP, Jquery, Java, Spring, Oracle"
     ],
-    "period" : "2021.11.16 ~ 2022.4.28"
+    "period": "2021.11.16 ~ 2022.4.28"
   },
   {
     "title": "카카오 구매 시스템(ERP) 구축",
-    "detail" : [
+    "detail": [
       "입고,납품 모듈 Backend & Frontend 개발",
       "그 외 모듈 부가기능 Backend & Frontend 개발지원",
       "React, TypeScript, Java, Spring Boot, Mysql"
     ],
-    "period" : "2022.5.2 ~ 2023.4.7"
+    "period": "2022.5.2 ~ 2023.4.7"
   },
   {
     "title": "KB증권 경영관리 인프라(ERP) 구축",
-    "detail" : [
+    "detail": [
       "예산 편성 모듈 Backend & Frontend 개발지원",
       "예산 운영 모듈 Backend & Frontend 개발지원",
       "Nexacro, Java, Spring, Oracle"
     ],
-    "period" : "2023.4.10 ~ 2023.10.18"
+    "period": "2023.4.10 ~ 2023.10.18"
   },
   {
     "title": "카카오 구매 시스템(ERP) 운영",
-    "detail" : [
+    "detail": [
       "React, TypeScript, Java, Spring Boot, Mysql"
     ],
-    "period" : "2023.10.19 ~ 2024.06.31"
+    "period": "2023.10.19 ~ 2024.06.31"
   },
   {
     "title": "LG.com 글로벌사이트 운영",
-    "detail" : [
+    "detail": [
       "V5.0 사이트 PDR(제품 스펙 전송 관리)배치 관리",
       "V5.0 사이트 이슈 대응",
       "JSP, freemarker, Jquery, Java, Spring, MariaDB"
     ],
-    "period" : "2024.07.01 ~ 2025.06.30"
+    "period": "2024.07.01 ~ 2025.06.30"
   },
   {
     "title": "현대자동차 사천 청구재고 넥사크로 전환 및 기능개선",
-    "detail" : [
+    "detail": [
       "불출관리 모듈 넥사크로 전환 및 기능개선",
       "Nexacro, Java, Spring, Tibero"
     ],
-    "period" : "2025.09.01 ~ 2025.12.31"
+    "period": "2025.09.01 ~ 2025.12.31"
   }
 ]
