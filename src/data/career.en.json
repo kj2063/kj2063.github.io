@@ -10,7 +10,7 @@
     "title": "Completed training at Chung-Ang Information Processing Academy",
     "detail": [
       "Completed Java application software developer course",
-      "JSP, jQuery, Java, Spring, Oracle"
+      "Technologies: JSP, jQuery, Java, Spring, Oracle"
     ],
     "period": "2021.11.16 ~ 2022.4.28"
   },
@@ -19,7 +19,7 @@
     "detail": [
       "Developed backend and frontend features for receiving and delivery modules",
       "Supported backend and frontend development for additional module features",
-      "React, TypeScript, Java, Spring Boot, MySQL"
+      "Technologies: React, TypeScript, Java, Spring Boot, MySQL"
     ],
     "period": "2022.5.2 ~ 2023.4.7"
   },
@@ -28,23 +28,23 @@
     "detail": [
       "Supported backend and frontend development for budget planning module",
       "Supported backend and frontend development for budget operation module",
-      "Nexacro, Java, Spring, Oracle"
+      "Technologies: Nexacro, Java, Spring, Oracle"
     ],
     "period": "2023.4.10 ~ 2023.10.18"
   },
   {
     "title": "Kakao purchasing system (ERP) operations",
     "detail": [
-      "React, TypeScript, Java, Spring Boot, MySQL"
+      "Technologies: React, TypeScript, Java, Spring Boot, MySQL"
     ],
-    "period": "2023.10.19 ~ 2024.06.31"
+    "period": "2023.10.19 ~ 2024.06.30"
   },
   {
     "title": "LG.com global site operations",
     "detail": [
       "Managed V5.0 site PDR batch processes for product specification transfer",
       "Handled V5.0 site issues",
-      "JSP, FreeMarker, jQuery, Java, Spring, MariaDB"
+      "Technologies: JSP, FreeMarker, jQuery, Java, Spring, MariaDB"
     ],
     "period": "2024.07.01 ~ 2025.06.30"
   },
@@ -52,8 +52,50 @@
     "title": "Hyundai Motor Company Sacheon billing inventory Nexacro migration and feature improvements",
     "detail": [
       "Migrated the issuance management module to Nexacro and improved features",
-      "Nexacro, Java, Spring, Tibero"
+      "Technologies: Nexacro, Java, Spring, Tibero"
     ],
     "period": "2025.09.01 ~ 2025.12.31"
+  },
+  {
+    "title": "Korean Commercial Arbitration Board next-generation international website implementation",
+    "detail": [
+      "Developed an international arbitration document search service using Graph RAG",
+      "Web technologies: JSP, jQuery, Java, Spring Boot, PostgreSQL",
+      "AI technologies: Python, Ollama, Neo4j, Docker"
+    ],
+    "period": "2026.01.02 ~ 2026.04.03"
+  },
+  {
+    "title": "Next.js ERP project-based architecture design and development",
+    "detail": [
+      "Designed and developed the base architecture for a Next.js ERP project",
+      "Developed a demo AI agent",
+      "Web technologies: Next.js, TypeScript, Java, Spring Boot, PostgreSQL",
+      "AI technologies: Python, LangChain"
+    ],
+    "period": "2026.01.02 ~ 2026.04.03"
+  },
+  {
+    "title": "SK Specialty wiserEHS system implementation",
+    "detail": [
+      "Supported system development for management, safety, environment, health, and chemical substance modules",
+      "Technologies: JSP, jQuery, Java, Spring, PostgreSQL"
+    ],
+    "period": "2026.04.06 ~ 2026.05.29"
+  },
+  {
+    "title": "Korean Commercial Arbitration Board Seoul ADR Festival website implementation",
+    "detail": [
+      "Led end-to-end development, including client coordination, infrastructure, CI/CD, design, development, publishing, and deployment",
+      "Technologies: Next.js, TypeScript, Java, Spring Boot, PostgreSQL"
+    ],
+    "period": "2026.06.01 ~ 2026.07.03"
+  },
+  {
+    "title": "Korea Occupational Safety and Health Agency app development",
+    "detail": [
+      "Project in progress"
+    ],
+    "period": "2026.07.06 ~ Present"
   }
 ]

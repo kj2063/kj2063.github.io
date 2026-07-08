@@ -29,6 +29,28 @@ type AboutContent = {
   profileAlt: string;
 }
 
+const technologyDetailPattern = /^(사용 기술(?:\([^)]+\))?|(?:web|ai) technologies|technologies):\s*(.+)$/i;
+
+const parseCareerDetail = (detail: string) => {
+  const match = detail.match(technologyDetailPattern);
+
+  if (!match) {
+    return {
+      text: detail,
+      type: 'description' as const,
+    };
+  }
+
+  return {
+    label: match[1],
+    technologies: match[2]
+      .split(',')
+      .map((technology) => technology.trim())
+      .filter(Boolean),
+    type: 'technology' as const,
+  };
+};
+
 const aboutLanguageStorageKey = 'aboutLanguage';
 
 const languageOptions: { label: string; value: AboutLanguage }[] = [
@@ -169,9 +191,26 @@ const About : React.FC = () => {
                   {data.title}
                 </h3>
                 <ul>
-                  {data.detail.map((detailData, detailIdx) => (
-                    <li key={`${idx}-${detailIdx}`}>{detailData}</li>
-                  ))}
+                  {data.detail.map((detailData, detailIdx) => {
+                    const careerDetail = parseCareerDetail(detailData);
+
+                    if (careerDetail.type === 'technology') {
+                      return (
+                        <li className="careerTechItem" key={`${idx}-${detailIdx}`}>
+                          <span className="careerTechLabel">{careerDetail.label}</span>
+                          <span className="careerTechStack">
+                            {careerDetail.technologies.map((technology) => (
+                              <span className="careerTechChip" key={`${idx}-${detailIdx}-${technology}`}>
+                                {technology}
+                              </span>
+                            ))}
+                          </span>
+                        </li>
+                      );
+                    }
+
+                    return <li key={`${idx}-${detailIdx}`}>{careerDetail.text}</li>;
+                  })}
                 </ul>
               </div>
             </article>

@@ -2,58 +2,100 @@
   {
     "title": "세종대학교 대학원 중력렌즈 및 은하역학 연구실 연구",
     "detail": [
-      "python 의 numpy, scipy, sympy, astropy, matplotlib 등을 이용한 데이터 분석"
+      "Python의 NumPy, SciPy, SymPy, Astropy, Matplotlib 등을 이용한 데이터 분석"
     ],
     "period": "2020.11.30 ~ 2021.10.29"
   },
   {
     "title": "중앙정보처리학원 교육 수료",
     "detail": [
-      "JAVA 응용 소프트웨어 개발자 과정 수료",
-      "JSP, Jquery, Java, Spring, Oracle"
+      "Java 응용 소프트웨어 개발자 과정 수료",
+      "사용 기술: JSP, jQuery, Java, Spring, Oracle"
     ],
     "period": "2021.11.16 ~ 2022.4.28"
   },
   {
     "title": "카카오 구매 시스템(ERP) 구축",
     "detail": [
-      "입고,납품 모듈 Backend & Frontend 개발",
-      "그 외 모듈 부가기능 Backend & Frontend 개발지원",
-      "React, TypeScript, Java, Spring Boot, Mysql"
+      "입고, 납품 모듈 Backend & Frontend 개발",
+      "그 외 모듈 부가기능 Backend & Frontend 개발 지원",
+      "사용 기술: React, TypeScript, Java, Spring Boot, MySQL"
     ],
     "period": "2022.5.2 ~ 2023.4.7"
   },
   {
     "title": "KB증권 경영관리 인프라(ERP) 구축",
     "detail": [
-      "예산 편성 모듈 Backend & Frontend 개발지원",
-      "예산 운영 모듈 Backend & Frontend 개발지원",
-      "Nexacro, Java, Spring, Oracle"
+      "예산 편성 모듈 Backend & Frontend 개발 지원",
+      "예산 운영 모듈 Backend & Frontend 개발 지원",
+      "사용 기술: Nexacro, Java, Spring, Oracle"
     ],
     "period": "2023.4.10 ~ 2023.10.18"
   },
   {
     "title": "카카오 구매 시스템(ERP) 운영",
     "detail": [
-      "React, TypeScript, Java, Spring Boot, Mysql"
+      "사용 기술: React, TypeScript, Java, Spring Boot, MySQL"
     ],
-    "period": "2023.10.19 ~ 2024.06.31"
+    "period": "2023.10.19 ~ 2024.06.30"
   },
   {
     "title": "LG.com 글로벌사이트 운영",
     "detail": [
-      "V5.0 사이트 PDR(제품 스펙 전송 관리)배치 관리",
+      "V5.0 사이트 PDR(제품 스펙 전송 관리) 배치 관리",
       "V5.0 사이트 이슈 대응",
-      "JSP, freemarker, Jquery, Java, Spring, MariaDB"
+      "사용 기술: JSP, FreeMarker, jQuery, Java, Spring, MariaDB"
     ],
     "period": "2024.07.01 ~ 2025.06.30"
   },
   {
-    "title": "현대자동차 사천 청구재고 넥사크로 전환 및 기능개선",
+    "title": "현대자동차 사천 청구재고 넥사크로 전환 및 기능 개선",
     "detail": [
-      "불출관리 모듈 넥사크로 전환 및 기능개선",
-      "Nexacro, Java, Spring, Tibero"
+      "불출관리 모듈 넥사크로 전환 및 기능 개선",
+      "사용 기술: Nexacro, Java, Spring, Tibero"
     ],
     "period": "2025.09.01 ~ 2025.12.31"
+  },
+  {
+    "title": "대한상사중재원 차세대 국제 홈페이지 구축",
+    "detail": [
+      "국제 중재 문서 찾기 서비스 개발(Graph RAG 활용)",
+      "사용 기술(WEB): JSP, jQuery, Java, Spring Boot, PostgreSQL",
+      "사용 기술(AI): Python, Ollama, Neo4j, Docker"
+    ],
+    "period": "2026.01.02 ~ 2026.04.03"
+  },
+  {
+    "title": "Next.js ERP 프로젝트 기반 아키텍처 설계 및 개발",
+    "detail": [
+      "Next.js ERP 프로젝트 기반 아키텍처 설계 및 개발",
+      "시연용 개발 AI Agent 개발",
+      "사용 기술(WEB): Next.js, TypeScript, Java, Spring Boot, PostgreSQL",
+      "사용 기술(AI): Python, LangChain"
+    ],
+    "period": "2026.01.02 ~ 2026.04.03"
+  },
+  {
+    "title": "SK스페셜티 wiserEHS 시스템 구축",
+    "detail": [
+      "경영, 안전, 환경, 보건, 화학물질 모듈 시스템 개발 지원",
+      "사용 기술: JSP, jQuery, Java, Spring, PostgreSQL"
+    ],
+    "period": "2026.04.06 ~ 2026.05.29"
+  },
+  {
+    "title": "대한상사중재원 Seoul ADR Festival 사이트 구축",
+    "detail": [
+      "End-to-End 개발(클라이언트 협의, 인프라, CI/CD, 설계, 개발, 퍼블리싱, 배포)",
+      "사용 기술: Next.js, TypeScript, Java, Spring Boot, PostgreSQL"
+    ],
+    "period": "2026.06.01 ~ 2026.07.03"
+  },
+  {
+    "title": "안전보건공단 앱 개발",
+    "detail": [
+      "진행 중"
+    ],
+    "period": "2026.07.06 ~ 현재"
   }
 ]
